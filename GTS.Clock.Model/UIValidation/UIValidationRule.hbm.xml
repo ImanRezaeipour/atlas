@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.UIValidation.UIValidationRule, GTS.Clock.Model"
+         table ="TA_UIValidationRule" lazy="true">
+    <id name="ID" access="property"  column="UIRle_ID" >
+      <generator class="native" />
+    </id>
+    <property name="Name"     access="property" column="UIRle_Name" />
+    <property name="CustomCode"     access="property" column="UIRle_CustomCode" />
+    <property name="RuleConcept"     access="property" column="UIRle_RuleConcept" />
+    <property name="SubsystemID"     access="property" column="UIRle_SubSystemID" />
+    <property name="Order"     access="property" column="UIRle_Order" />
+    <property name="Type"         access="property" column="UIRle_RuleType" />
+    <property name="ExistTag"     access="property" column="UIValidationRule_ExistTag" />
+    
+    <bag name="RuleGroupList" table="TA_UIValidationRuleGroup" lazy="true" >
+      <key column="UIValRleGrp_UIRleID"></key>
+      <one-to-many class="GTS.Clock.Model.UIValidation.UIValidationRuleGroup, GTS.Clock.Model"></one-to-many>
+    </bag>
+    <bag name="TempParamList" table="TA_UIValidationTempParameter" lazy="true" >
+      <key column="UIValTemp_RuleID"></key>
+      <one-to-many class="GTS.Clock.Model.UIValidation.UIValidationRuleTempParameter, GTS.Clock.Model"></one-to-many>
+    </bag>
+    <bag name="AllowedRulePrecardList" table="TA_UIValidationAllowedRulePrecard" lazy="true" >
+      <key column="UIValAllowPre_RuleID"></key>
+      <one-to-many class="GTS.Clock.Model.UIValidation.UIValidationAllowedRulePrecard, GTS.Clock.Model"></one-to-many>
+    </bag>
+  </class>
+</hibernate-mapping>

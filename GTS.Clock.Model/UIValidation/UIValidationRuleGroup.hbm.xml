@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.UIValidation.UIValidationRuleGroup, GTS.Clock.Model"
+         table ="TA_UIValidationRuleGroup" lazy="true">
+    <id name="ID" access="property"  column="UIValRleGrp_ID" >
+      <generator class="native" />
+    </id>
+ 
+    <property name="Active"     access="property"  column="UIValRleGrp_Active" />
+    <property name="Warning"     access="property" column="UIValRleGrp_Warning" />
+    <property name="Tag"     access="property" column="UIValidationRuleGroup_Tag" />
+
+    <many-to-one name="ValidationGroup" column="UIValRleGrp_GroupID" class="GTS.Clock.Model.UIValidation.UIValidationGroup, GTS.Clock.Model" cascade="none" />
+
+    <many-to-one name="ValidationRule" column="UIValRleGrp_RuleID" class="GTS.Clock.Model.UIValidation.UIValidationRule, GTS.Clock.Model" cascade="none" />
+
+    <bag name="PrecardList" table="TA_UIValidationRuleGroupPrecard" lazy="true" inverse="true" cascade="all" >
+      <key column="UIValPre_RuleGroupID"></key>
+      <one-to-many class="GTS.Clock.Model.UIValidation.UIValidationRuleGroupPrecard, GTS.Clock.Model"></one-to-many>
+    </bag>
+  </class>
+</hibernate-mapping>

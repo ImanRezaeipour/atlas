@@ -1,0 +1,17 @@
+D:\TMI\Atlas\GTS.BaseBusiness\obj\Debug\GTS.BaseBusiness.csprojResolveAssemblyReference.cache
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\GTS.BaseBusiness.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\GTS.BaseBusiness.pdb
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\ComponentArt.Web.UI.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\GTS.Clock.Infrastructure.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\GTS.Clock.Model.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\SKGL.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\NHibernate.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\log4net.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\AtlasEncryption.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\Remotion.Data.Linq.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\Antlr3.Runtime.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\Iesi.Collections.dll
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\GTS.Clock.Infrastructure.pdb
+D:\TMI\Atlas\GTS.BaseBusiness\bin\Debug\GTS.Clock.Model.pdb
+D:\TMI\Atlas\GTS.BaseBusiness\obj\Debug\GTS.BaseBusiness.dll
+D:\TMI\Atlas\GTS.BaseBusiness\obj\Debug\GTS.BaseBusiness.pdb

@@ -1,0 +1,19 @@
+﻿<form data-bind="formValidator: validator">
+    <div class="form-group">
+        <label class="control-label">پرسنل</label>
+        <input type="text" class="form-control" readonly="readonly" name="LastName" data-bind="textInput : Person">
+    </div>
+    <hr />
+    <div class="form-group">
+        <label class="control-label">اضافه کار تشویقی</label>
+        <input type="number" class="form-control" name="MaxOverTime" data-bind="textInput :MaxOverTime , attr: {readOnly: HasOverTime }">
+    </div>
+    <div class="form-group">
+        <label class="control-label">تعطیل کاری تشویقی</label>
+        <input type="number" class="form-control" name="MaxHolidayWork" data-bind="textInput :MaxHolidayWork , attr: {readOnly: HasHolidayWork }">
+    </div>
+    <div class="form-group">
+        <label class="control-label">شب کاری تشویقی</label>
+        <input type="number" class="form-control" name="MaxNightWork" data-bind="textInput :MaxNightWork , attr: {readOnly: HasNightWork }">
+    </div>
+</form>

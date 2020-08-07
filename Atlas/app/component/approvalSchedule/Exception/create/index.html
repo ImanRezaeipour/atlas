@@ -1,0 +1,14 @@
+﻿<form data-bind="formValidator: validator">
+    <div class="form-group">
+        <label class="control-label">پرسنل</label>
+        <select class="form-control select2" name="Persons" data-bind="select: Persons"></select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">از تاریخ</label>
+        <input type="text" class="form-control" name="DateFrom" data-bind="datepicker :DateFrom">
+    </div>
+    <div class="form-group">
+        <label class="control-label">تا تاریخ</label>
+        <input type="text" class="form-control" name="DateTo" data-bind="datepicker :DateTo">
+    </div>
+</form>

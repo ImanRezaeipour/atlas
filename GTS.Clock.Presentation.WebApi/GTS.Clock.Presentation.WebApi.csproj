@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0576A2B-0A6D-47D8-B0C8-D5E45AB802FE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTS.Clock.Presentation.WebApi</RootNamespace>
+    <AssemblyName>GTS.Clock.Presentation.WebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\dnn sazmani\dnn\bin\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AtlasEncryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\AtlasEncryption.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy, Version=1.0.4.18998, Culture=neutral, PublicKeyToken=62a6874124340d6e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu, Version=3.1.0.4000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\shahrdari\Atlas TA Project\GTS.Clock.Presentation.WebApi\bin\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Publish\ATLAS-API\bin\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\engine\template\" />
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+    <Folder Include="Providers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\DepartmentController.cs" />
+    <Compile Include="Api\KartableController.cs" />
+    <Compile Include="Api\ApprovalScheduleController.cs" />
+    <Compile Include="Api\OverTimeController.cs" />
+    <Compile Include="Api\OverTimeEdariController.cs" />
+    <Compile Include="Api\OverTimePersonController.cs" />
+    <Compile Include="Api\YearMonthController.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SessionableControllerHandler.cs" />
+    <Compile Include="App_Start\SessionStateRouteHandler.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\BToken.cs" />
+    <Compile Include="Common\BusinessHelper.cs" />
+    <Compile Include="Common\CacheClientAttribute.cs" />
+    <Compile Include="Common\CryptData.cs" />
+    <Compile Include="Common\Crypto.cs" />
+    <Compile Include="Common\StringGenerator.cs" />
+    <Compile Include="Controllers\ApprovalScheduleController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HRMSController.cs" />
+    <Compile Include="Controllers\KartableController.cs" />
+    <Compile Include="Controllers\OvertimeController.cs" />
+    <Compile Include="Controllers\OvertimeEdariController.cs" />
+    <Compile Include="Controllers\OvertimePersonController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataTablePageData.cs" />
+    <Compile Include="Models\SelectItem.cs" />
+    <Compile Include="Models\SelectPageData.cs" />
+    <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\TreeItem.cs" />
+    <Compile Include="Models\ValidationData.cs" />
+    <Compile Include="Modules\ApiBasicAuthHttpModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\OverTimePersonDetail\OverTimePersonDetailViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\controllers\approvalSchedule\edit.js" />
+    <Content Include="app\controllers\approvalSchedule\list.js" />
+    <Content Include="app\controllers\approvalSchedule\validator.js" />
+    <Content Include="app\controllers\department\dataService.js" />
+    <Content Include="app\controllers\home\home.js" />
+    <Content Include="app\controllers\home\menu.js" />
+    <Content Include="app\controllers\hrms\index.js" />
+    <Content Include="app\controllers\kartable\list.js" />
+    <Content Include="app\controllers\overtimeEdari\edit.js" />
+    <Content Include="app\controllers\overtimeEdari\list.js" />
+    <Content Include="app\controllers\overtimeEdari\validator.js" />
+    <Content Include="app\controllers\overtimePerson\edit.js" />
+    <Content Include="app\controllers\overtimePerson\list.js" />
+    <Content Include="app\controllers\overtimePerson\validator.js" />
+    <Content Include="app\controllers\overtime\create.js" />
+    <Content Include="app\controllers\overtime\dataService.js" />
+    <Content Include="app\controllers\overtime\edit.js" />
+    <Content Include="app\controllers\overtime\list.js" />
+    <Content Include="app\controllers\overtime\validator.js" />
+    <Content Include="app\controllers\spa.controllers.register.js" />
+    <Content Include="app\engine\core\spa.engine.core.config.js" />
+    <Content Include="app\engine\core\spa.engine.core.data.js" />
+    <Content Include="app\engine\core\spa.engine.core.dataTable.js" />
+    <Content Include="app\engine\core\spa.engine.core.modal.js" />
+    <Content Include="app\engine\core\spa.engine.core.router.js" />
+    <Content Include="app\engine\core\spa.engine.core.select.js" />
+    <Content Include="app\engine\core\spa.engine.core.validator.js" />
+    <Content Include="app\engine\css\bootstrap-rtl.min.css" />
+    <Content Include="app\engine\css\bootstrap.min.css" />
+    <Content Include="app\engine\css\images\backgroundTop.png" />
+    <Content Include="app\engine\css\images\backImage.png" />
+    <Content Include="app\engine\css\images\bg_black.png" />
+    <Content Include="app\engine\css\images\bg_blackhover.png" />
+    <Content Include="app\engine\css\images\bg_blackhover_horizontal.png" />
+    <Content Include="app\engine\css\images\bg_blackpressed.png" />
+    <Content Include="app\engine\css\images\bg_blackpressed_horizontal.png" />
+    <Content Include="app\engine\css\images\bg_black_horizontal.png" />
+    <Content Include="app\engine\css\images\bg_blueenergy.png" />
+    <Content Include="app\engine\css\images\bg_darkblue.png" />
+    <Content Include="app\engine\css\images\bg_darkbluehover.png" />
+    <Content Include="app\engine\css\images\bg_darkbluepressed.png" />
+    <Content Include="app\engine\css\images\blackbackground.png" />
+    <Content Include="app\engine\css\images\black_gradient.png" />
+    <Content Include="app\engine\css\images\check_black.png" />
+    <Content Include="app\engine\css\images\check_blue.png" />
+    <Content Include="app\engine\css\images\check_blue_indeterminate.png" />
+    <Content Include="app\engine\css\images\check_disabled.png" />
+    <Content Include="app\engine\css\images\check_indeterminate_black.png" />
+    <Content Include="app\engine\css\images\check_indeterminate_disabled.png" />
+    <Content Include="app\engine\css\images\check_indeterminate_white.png" />
+    <Content Include="app\engine\css\images\check_lightblue.png" />
+    <Content Include="app\engine\css\images\check_lightblue_indeterminate.png" />
+    <Content Include="app\engine\css\images\check_white.png" />
+    <Content Include="app\engine\css\images\close.png" />
+    <Content Include="app\engine\css\images\close_black.png" />
+    <Content Include="app\engine\css\images\close_blue.png" />
+    <Content Include="app\engine\css\images\close_white.png" />
+    <Content Include="app\engine\css\images\colorpicker\bar-hue.png" />
+    <Content Include="app\engine\css\images\colorpicker\bar-saturation.png" />
+    <Content Include="app\engine\css\images\colorpicker\map-hue.png" />
+    <Content Include="app\engine\css\images\colorpicker\map-saturation-overlay.png" />
+    <Content Include="app\engine\css\images\colorpicker\map-saturation.png" />
+    <Content Include="app\engine\css\images\colorpicker\ReadMe.txt" />
+    <Content Include="app\engine\css\images\common.png" />
+    <Content Include="app\engine\css\images\crosshair-white.png" />
+    <Content Include="app\engine\css\images\crosshair.png" />
+    <Content Include="app\engine\css\images\darkness\ReadMe.txt" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="app\engine\css\images\darkness\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="app\engine\css\images\darkness\ui-icons_222222_256x240.png" />
+    <Content Include="app\engine\css\images\darkness\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="app\engine\css\images\darkness\ui-icons_a83300_256x240.png" />
+    <Content Include="app\engine\css\images\darkness\ui-icons_cccccc_256x240.png" />
+    <Content Include="app\engine\css\images\darkness\ui-icons_ffffff_256x240.png" />
+    <Content Include="app\engine\css\images\darkred_gradient.png" />
+    <Content Include="app\engine\css\images\drag.png" />
+    <Content Include="app\engine\css\images\dragcancel.png" />
+    <Content Include="app\engine\css\images\error.png" />
+    <Content Include="app\engine\css\images\filter.png" />
+    <Content Include="app\engine\css\images\html_editor.png" />
+    <Content Include="app\engine\css\images\html_editor_white.png" />
+    <Content Include="app\engine\css\images\icon-calendar-white.png" />
+    <Content Include="app\engine\css\images\icon-calendar.png" />
+    <Content Include="app\engine\css\images\icon-cancel-white.png" />
+    <Content Include="app\engine\css\images\icon-cancel.png" />
+    <Content Include="app\engine\css\images\icon-delete-white.png" />
+    <Content Include="app\engine\css\images\icon-delete.png" />
+    <Content Include="app\engine\css\images\icon-down-blue.png" />
+    <Content Include="app\engine\css\images\icon-down-transparent.png" />
+    <Content Include="app\engine\css\images\icon-down-white.png" />
+    <Content Include="app\engine\css\images\icon-down.png" />
+    <Content Include="app\engine\css\images\icon-edit-white.png" />
+    <Content Include="app\engine\css\images\icon-edit.png" />
+    <Content Include="app\engine\css\images\icon-first-blue.png" />
+    <Content Include="app\engine\css\images\icon-first-transparent.png" />
+    <Content Include="app\engine\css\images\icon-first-white.png" />
+    <Content Include="app\engine\css\images\icon-first.png" />
+    <Content Include="app\engine\css\images\icon-last-blue.png" />
+    <Content Include="app\engine\css\images\icon-last-transparent.png" />
+    <Content Include="app\engine\css\images\icon-last-white.png" />
+    <Content Include="app\engine\css\images\icon-last.png" />
+    <Content Include="app\engine\css\images\icon-left-blue.png" />
+    <Content Include="app\engine\css\images\icon-left-transparent.png" />
+    <Content Include="app\engine\css\images\icon-left-white.png" />
+    <Content Include="app\engine\css\images\icon-left.png" />
+    <Content Include="app\engine\css\images\icon-menu-minimized-white.png" />
+    <Content Include="app\engine\css\images\icon-menu-minimized.png" />
+    <Content Include="app\engine\css\images\icon-plus-white.png" />
+    <Content Include="app\engine\css\images\icon-plus.png" />
+    <Content Include="app\engine\css\images\icon-recurrence-exception-white.png" />
+    <Content Include="app\engine\css\images\icon-recurrence-exception.png" />
+    <Content Include="app\engine\css\images\icon-recurrence-white.png" />
+    <Content Include="app\engine\css\images\icon-recurrence.png" />
+    <Content Include="app\engine\css\images\icon-right-blue.png" />
+    <Content Include="app\engine\css\images\icon-right-transparent.png" />
+    <Content Include="app\engine\css\images\icon-right-white.png" />
+    <Content Include="app\engine\css\images\icon-right.png" />
+    <Content Include="app\engine\css\images\icon-save-white.png" />
+    <Content Include="app\engine\css\images\icon-save.png" />
+    <Content Include="app\engine\css\images\icon-showpassword-white.png" />
+    <Content Include="app\engine\css\images\icon-showpassword.png" />
+    <Content Include="app\engine\css\images\icon-time-white.png" />
+    <Content Include="app\engine\css\images\icon-time.png" />
+    <Content Include="app\engine\css\images\icon-up-blue.png" />
+    <Content Include="app\engine\css\images\icon-up-transparent.png" />
+    <Content Include="app\engine\css\images\icon-up-white.png" />
+    <Content Include="app\engine\css\images\icon-up.png" />
+    <Content Include="app\engine\css\images\info.png" />
+    <Content Include="app\engine\css\images\le-frog\ReadMe.txt" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_diagonals-thick_15_444444_40x40.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_glass_55_fbf5d0_1x400.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_highlight-hard_30_285c00_1x100.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_highlight-soft_33_3a8104_1x100.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_highlight-soft_50_4eb305_1x100.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-bg_inset-soft_10_285c00_1x100.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-icons_4eb305_256x240.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-icons_72b42d_256x240.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="app\engine\css\images\le-frog\ui-icons_ffffff_256x240.png" />
+    <Content Include="app\engine\css\images\lightness\icon-first.png" />
+    <Content Include="app\engine\css\images\lightness\icon-last.png" />
+    <Content Include="app\engine\css\images\lightness\ReadMe.txt" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="app\engine\css\images\lightness\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="app\engine\css\images\lightness\ui-icons_222222_256x240.png" />
+    <Content Include="app\engine\css\images\lightness\ui-icons_228ef1_256x240.png" />
+    <Content Include="app\engine\css\images\lightness\ui-icons_ef8c08_256x240.png" />
+    <Content Include="app\engine\css\images\lightness\ui-icons_ffd27a_256x240.png" />
+    <Content Include="app\engine\css\images\lightness\ui-icons_ffffff_256x240.png" />
+    <Content Include="app\engine\css\images\loader-small.gif" />
+    <Content Include="app\engine\css\images\loader.gif" />
+    <Content Include="app\engine\css\images\mail.png" />
+    <Content Include="app\engine\css\images\menubutton.png" />
+    <Content Include="app\engine\css\images\metro-icon-down-white.png" />
+    <Content Include="app\engine\css\images\metro-icon-down.png" />
+    <Content Include="app\engine\css\images\metro-icon-first-white.png" />
+    <Content Include="app\engine\css\images\metro-icon-first.png" />
+    <Content Include="app\engine\css\images\metro-icon-last-white.png" />
+    <Content Include="app\engine\css\images\metro-icon-last.png" />
+    <Content Include="app\engine\css\images\metro-icon-left-white.png" />
+    <Content Include="app\engine\css\images\metro-icon-left.png" />
+    <Content Include="app\engine\css\images\metro-icon-right - Copy.png" />
+    <Content Include="app\engine\css\images\metro-icon-right-white.png" />
+    <Content Include="app\engine\css\images\metro-icon-right.png" />
+    <Content Include="app\engine\css\images\metro-icon-up-white.png" />
+    <Content Include="app\engine\css\images\metro-icon-up.png" />
+    <Content Include="app\engine\css\images\multi-arrow.gif" />
+    <Content Include="app\engine\css\images\office-icon-down.png" />
+    <Content Include="app\engine\css\images\office-icon-first.png" />
+    <Content Include="app\engine\css\images\office-icon-last.png" />
+    <Content Include="app\engine\css\images\office-icon-left.png" />
+    <Content Include="app\engine\css\images\office-icon-right.png" />
+    <Content Include="app\engine\css\images\office-icon-up.png" />
+    <Content Include="app\engine\css\images\overcast\ReadMe.txt" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="app\engine\css\images\overcast\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="app\engine\css\images\overcast\ui-icons_3383bb_256x240.png" />
+    <Content Include="app\engine\css\images\overcast\ui-icons_454545_256x240.png" />
+    <Content Include="app\engine\css\images\overcast\ui-icons_70b2e1_256x240.png" />
+    <Content Include="app\engine\css\images\overcast\ui-icons_999999_256x240.png" />
+    <Content Include="app\engine\css\images\overcast\ui-icons_fbc856_256x240.png" />
+    <Content Include="app\engine\css\images\pin-black.png" />
+    <Content Include="app\engine\css\images\pin-blue.png" />
+    <Content Include="app\engine\css\images\pin-lightblue.png" />
+    <Content Include="app\engine\css\images\pin-white.png" />
+    <Content Include="app\engine\css\images\pin-yellow.png" />
+    <Content Include="app\engine\css\images\pin.png" />
+    <Content Include="app\engine\css\images\pinned-black.png" />
+    <Content Include="app\engine\css\images\pinned-blue.png" />
+    <Content Include="app\engine\css\images\pinned-lightblue.png" />
+    <Content Include="app\engine\css\images\pinned-white.png" />
+    <Content Include="app\engine\css\images\pinned-yellow.png" />
+    <Content Include="app\engine\css\images\pinned.png" />
+    <Content Include="app\engine\css\images\plus.png" />
+    <Content Include="app\engine\css\images\plus_white.png" />
+    <Content Include="app\engine\css\images\pointer.png" />
+    <Content Include="app\engine\css\images\rangebar_classic.png" />
+    <Content Include="app\engine\css\images\rangebar_darkblue.png" />
+    <Content Include="app\engine\css\images\rangebar_shinyblack.png" />
+    <Content Include="app\engine\css\images\rangebar_summer.png" />
+    <Content Include="app\engine\css\images\redmond\icon-first.png" />
+    <Content Include="app\engine\css\images\redmond\icon-last.png" />
+    <Content Include="app\engine\css\images\redmond\ReadMe.txt" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="app\engine\css\images\redmond\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="app\engine\css\images\redmond\ui-icons_217bc0_256x240.png" />
+    <Content Include="app\engine\css\images\redmond\ui-icons_2e83ff_256x240.png" />
+    <Content Include="app\engine\css\images\redmond\ui-icons_469bdd_256x240.png" />
+    <Content Include="app\engine\css\images\redmond\ui-icons_6da8d5_256x240.png" />
+    <Content Include="app\engine\css\images\redmond\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="app\engine\css\images\redmond\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="app\engine\css\images\redmond\ui-icons_f9bd01_256x240.png" />
+    <Content Include="app\engine\css\images\red_arrow_down.png" />
+    <Content Include="app\engine\css\images\red_arrow_up.png" />
+    <Content Include="app\engine\css\images\red_gradient.png" />
+    <Content Include="app\engine\css\images\roundbg_check_black.png" />
+    <Content Include="app\engine\css\images\roundbg_check_disabled.png" />
+    <Content Include="app\engine\css\images\roundbg_check_indeterminate.png" />
+    <Content Include="app\engine\css\images\roundbg_check_white.png" />
+    <Content Include="app\engine\css\images\roundbg_classic_hover.png" />
+    <Content Include="app\engine\css\images\roundbg_classic_normal.png" />
+    <Content Include="app\engine\css\images\roundbg_disabled.png" />
+    <Content Include="app\engine\css\images\search.png" />
+    <Content Include="app\engine\css\images\search_white.png" />
+    <Content Include="app\engine\css\images\smoothness\ReadMe.txt" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-icons_222222_256x240.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-icons_2e83ff_256x240.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-icons_454545_256x240.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-icons_888888_256x240.png" />
+    <Content Include="app\engine\css\images\smoothness\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="app\engine\css\images\sortasc.png" />
+    <Content Include="app\engine\css\images\sortascbutton.png" />
+    <Content Include="app\engine\css\images\sortdesc.png" />
+    <Content Include="app\engine\css\images\sortdescbutton.png" />
+    <Content Include="app\engine\css\images\sortremove.png" />
+    <Content Include="app\engine\css\images\star.png" />
+    <Content Include="app\engine\css\images\start\ReadMe.txt" />
+    <Content Include="app\engine\css\images\start\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="app\engine\css\images\start\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="app\engine\css\images\start\ui-icons_0078ae_256x240.png" />
+    <Content Include="app\engine\css\images\start\ui-icons_056b93_256x240.png" />
+    <Content Include="app\engine\css\images\start\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="app\engine\css\images\start\ui-icons_e0fdff_256x240.png" />
+    <Content Include="app\engine\css\images\start\ui-icons_f5e175_256x240.png" />
+    <Content Include="app\engine\css\images\start\ui-icons_f7a50d_256x240.png" />
+    <Content Include="app\engine\css\images\start\ui-icons_fcd113_256x240.png" />
+    <Content Include="app\engine\css\images\star_disabled.png" />
+    <Content Include="app\engine\css\images\star_hover.png" />
+    <Content Include="app\engine\css\images\stripes.png" />
+    <Content Include="app\engine\css\images\success.png" />
+    <Content Include="app\engine\css\images\sunny\ReadMe.txt" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="app\engine\css\images\sunny\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="app\engine\css\images\sunny\ui-icons_bd7b00_256x240.png" />
+    <Content Include="app\engine\css\images\sunny\ui-icons_d19405_256x240.png" />
+    <Content Include="app\engine\css\images\sunny\ui-icons_eb990f_256x240.png" />
+    <Content Include="app\engine\css\images\sunny\ui-icons_ed9f26_256x240.png" />
+    <Content Include="app\engine\css\images\sunny\ui-icons_fadc7a_256x240.png" />
+    <Content Include="app\engine\css\images\sunny\ui-icons_ffe180_256x240.png" />
+    <Content Include="app\engine\css\images\tick.png" />
+    <Content Include="app\engine\css\images\time.png" />
+    <Content Include="app\engine\css\images\track_classic.png" />
+    <Content Include="app\engine\css\images\track_darkblue.png" />
+    <Content Include="app\engine\css\images\track_shinyblack.png" />
+    <Content Include="app\engine\css\images\track_summer.png" />
+    <Content Include="app\engine\css\images\warning.png" />
+    <Content Include="app\engine\css\images\wp_check_indeterminate_white.png" />
+    <Content Include="app\engine\css\images\wp_check_white.png" />
+    <Content Include="app\engine\css\jqx.base.css" />
+    <Content Include="app\engine\css\jqx.bootstrap.css" />
+    <Content Include="app\engine\css\Site.css" />
+    <Content Include="app\engine\css\spa.engine.css" />
+    <Content Include="app\engine\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\engine\handler\spa.engine.handler.dataTable.js" />
+    <Content Include="app\engine\handler\spa.engine.handler.datepicker.js" />
+    <Content Include="app\engine\handler\spa.engine.handler.select.js" />
+    <Content Include="app\engine\handler\spa.engine.handler.validator.js" />
+    <Content Include="app\engine\images\ajax-loader.gif" />
+    <Content Include="app\engine\images\spiner.gif" />
+    <Content Include="app\engine\infrastructure\animate\spa.engine.infrastructure.animate.css" />
+    <Content Include="app\engine\infrastructure\animate\spa.engine.infrastructure.animate.js" />
+    <Content Include="app\engine\infrastructure\buttons\spa.engine.infrastructure.buttons.js" />
+    <Content Include="app\engine\infrastructure\checkbox\spa.engine.infrastructure.checkbox.js" />
+    <Content Include="app\engine\infrastructure\dataTable\spa.engine.infrastructure.dataTable.css" />
+    <Content Include="app\engine\infrastructure\dataTable\spa.engine.infrastructure.dataTable.js" />
+    <Content Include="app\engine\infrastructure\dataTable\spa.engine.infrastructure.dataTableBS.js" />
+    <Content Include="app\engine\infrastructure\datepicker\spa.engine.infrastructure.datepicker.css" />
+    <Content Include="app\engine\infrastructure\datepicker\spa.engine.infrastructure.datepicker.js" />
+    <Content Include="app\engine\infrastructure\dropdownbutton\spa.engine.infrastructure.dropdownbutton.js" />
+    <Content Include="app\engine\infrastructure\dropdownlist\spa.engine.infrastructure.dropdownlist.js" />
+    <Content Include="app\engine\infrastructure\easing\spa.engine.infrastructure.easing.js" />
+    <Content Include="app\engine\infrastructure\guid\spa.engine.infrastructure.guid.js" />
+    <Content Include="app\engine\infrastructure\loader\spa.engine.infrastructure.cssLoader.js" />
+    <Content Include="app\engine\infrastructure\loader\spa.engine.infrastructure.domReady.js" />
+    <Content Include="app\engine\infrastructure\loader\spa.engine.infrastructure.htmlLoader.js" />
+    <Content Include="app\engine\infrastructure\message\spa.engine.infrastructure.message-rtl.css" />
+    <Content Include="app\engine\infrastructure\message\spa.engine.infrastructure.message-rtl.min.css" />
+    <Content Include="app\engine\infrastructure\message\spa.engine.infrastructure.message.css" />
+    <Content Include="app\engine\infrastructure\message\spa.engine.infrastructure.message.js" />
+    <Content Include="app\engine\infrastructure\message\spa.engine.infrastructure.message.min.css" />
+    <Content Include="app\engine\infrastructure\message\spa.engine.infrastructure.message.min.js" />
+    <Content Include="app\engine\infrastructure\moment\spa.engine.infrastructure.moment.jalali.js" />
+    <Content Include="app\engine\infrastructure\moment\spa.engine.infrastructure.moment.js" />
+    <Content Include="app\engine\infrastructure\panel\spa.engine.infrastructure.panel.js" />
+    <Content Include="app\engine\infrastructure\router\spa.engine.infrastructure.router.js" />
+    <Content Include="app\engine\infrastructure\router\spa.engine.infrastructure.router.min.js" />
+    <Content Include="app\engine\infrastructure\scrollbar\spa.engine.infrastructure.scrollbar.js" />
+    <Content Include="app\engine\infrastructure\select\spa.engine.infrastructure.select.css" />
+    <Content Include="app\engine\infrastructure\select\spa.engine.infrastructure.select.js" />
+    <Content Include="app\engine\infrastructure\select\spa.engine.infrastructure.selectfa.js" />
+    <Content Include="app\engine\infrastructure\tree\spa.engine.infrastructure.tree.js" />
+    <Content Include="app\engine\infrastructure\validator\custom\spa.engine.infrastructure.validator.custom.jDate.js" />
+    <Content Include="app\engine\infrastructure\validator\spa.engine.infrastructure.validator.css" />
+    <Content Include="app\engine\infrastructure\validator\spa.engine.infrastructure.validator.js" />
+    <Content Include="app\engine\infrastructure\validator\spa.engine.infrastructure.validator.min.css" />
+    <Content Include="app\engine\infrastructure\validator\spa.engine.infrastructure.validator.min.js" />
+    <Content Include="app\engine\lib\bootstrap.min.js" />
+    <Content Include="app\engine\lib\jquery-2.1.4.min.js" />
+    <Content Include="app\engine\lib\jqx-all.js" />
+    <Content Include="app\engine\lib\jqxcheckbox.js" />
+    <Content Include="app\engine\lib\jqxcore.js" />
+    <Content Include="app\engine\lib\jqxdata.js" />
+    <Content Include="app\engine\lib\jqxknockout.js" />
+    <Content Include="app\engine\lib\knockout-3.3.0.js" />
+    <Content Include="app\engine\lib\q.min.js" />
+    <Content Include="app\engine\lib\require.js" />
+    <Content Include="app\engine\widget\loader\spa.engine.widget.loader.html" />
+    <Content Include="app\engine\widget\loader\spa.engine.widget.loader.js" />
+    <Content Include="app\engine\widget\manager\spa.engine.widget.manager.html" />
+    <Content Include="app\engine\widget\manager\spa.engine.widget.manager.js" />
+    <Content Include="app\engine\widget\message\spa.engine.widget.message.js" />
+    <Content Include="app\engine\widget\modal\spa.engine.widget.modal.html" />
+    <Content Include="app\engine\widget\modal\spa.engine.widget.modal.js" />
+    <Content Include="app\engine\widget\spa.engine.widget.register.js" />
+    <Content Include="app\main.js" />
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="app\engine\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\engine\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\engine\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\engine\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="net4log.Config" />
+    <None Include="Properties\PublishProfiles\ATLAS-API.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\HRMS\Index.cshtml" />
+    <Content Include="Views\Kartable\List.cshtml" />
+    <Content Include="Views\OvertimePerson\Edit.cshtml" />
+    <Content Include="Views\OvertimePerson\List.cshtml" />
+    <Content Include="Views\Overtime\Create.cshtml" />
+    <Content Include="Views\Overtime\Edit.cshtml" />
+    <Content Include="Views\Overtime\List.cshtml" />
+    <Content Include="Views\ApprovalSchedule\Edit.cshtml" />
+    <Content Include="Views\ApprovalSchedule\List.cshtml" />
+    <Content Include="Views\OvertimeEdari\List.cshtml" />
+    <Content Include="Views\OvertimeEdari\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GTS.BaseBusiness\GTS.BaseBusiness.csproj">
+      <Project>{a2896779-e83e-4b5d-b3d9-0bc5c3bd320c}</Project>
+      <Name>GTS.BaseBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GTS.Clock.Business\GTS.Clock.Business.csproj">
+      <Project>{5788c982-1c90-401a-9f8b-32f2b19b5ff4}</Project>
+      <Name>GTS.Clock.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GTS.Clock.Infrastructure\GTS.Clock.Infrastructure.csproj">
+      <Project>{e9fceae6-0fbd-4996-9cd1-ed5f7fb308d6}</Project>
+      <Name>GTS.Clock.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GTS.Clock.Model\GTS.Clock.Model.csproj">
+      <Project>{1bfa345b-4fb1-4618-9bf3-6bd1c5b1bbb6}</Project>
+      <Name>GTS.Clock.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10385</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9620/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

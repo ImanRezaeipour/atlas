@@ -1,0 +1,13 @@
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\GTS.Clock.Infrastructure.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\GTS.Clock.Infrastructure.pdb
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\Antlr3.Runtime.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\AtlasEncryption.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\Iesi.Collections.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\LinFu.DynamicProxy.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\log4net.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\NHibernate.ByteCode.LinFu.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\NHibernate.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\Remotion.Data.Linq.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\bin\Debug\SKGL.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\obj\Debug\GTS.Clock.Infrastructure.dll
+D:\TMI\Atlas\GTS.Clock.Infrastructure\obj\Debug\GTS.Clock.Infrastructure.pdb

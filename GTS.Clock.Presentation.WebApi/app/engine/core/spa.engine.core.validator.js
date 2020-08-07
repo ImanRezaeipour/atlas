@@ -1,0 +1,1 @@
+﻿define(["ko"], function (t) { var n = function (n, e, o) { var c = this; c.state = t.observable(!1), c.clear = function () { c.state(!1) }, c.validate = function () { c.state(!0) }, c.fields = n, "function" == typeof e ? c.success = e : c.success = function () { }, "function" == typeof o ? c.error = o : c.error = function () { } }; return n });

@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="clmnFromDate_GridPersonnelMultiDateFeatures_PersonnelMultiDateFeatures.HeadingText" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="clmnName_GridPersonnelMultiDateFeatures_PersonnelMultiDateFeatures.HeadingText" xml:space="preserve">
+    <value>نام قانون</value>
+  </data>
+  <data name="clmnToDate_GridPersonnelMultiDateFeatures_PersonnelMultiDateFeatures.HeadingText" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="hfAdd_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>درج</value>
+  </data>
+  <data name="hfCloseMessage_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>آیا از فرم گروه های قوانین پرسنل خارج می شوید ؟</value>
+  </data>
+  <data name="hfcmbAlarm_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>انتخاب کنید</value>
+  </data>
+  <data name="hfDeleteMessage_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>آیا این گروه قوانین پرسنل را حذف می کنید ؟</value>
+  </data>
+  <data name="hfDelete_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="hfEdit_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="hfheader_PersonnelMultiDateFeatures_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>گروه های قوانین پرسنل</value>
+  </data>
+  <data name="hfloadingPanel_GridPersonnelMultiDateFeatures_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>در حال بارگیری ....</value>
+  </data>
+  <data name="hfTitle_DialogPersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>گروه های قوانین پرسنل</value>
+  </data>
+  <data name="hfView_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>نمایش</value>
+  </data>
+  <data name="InverseAlignObj.align" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="lblFromDate_PersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>از تاریخ :</value>
+  </data>
+  <data name="lblRuleGroupName_PersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>نام گروه قانون :</value>
+  </data>
+  <data name="lblToDate_PersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>تا تاریخ :</value>
+  </data>
+  <data name="PersonnelMultiDateFeaturesForm.dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="tlbItemCancel_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="tlbItemDelete_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="tlbItemEdit_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="tlbItemExit_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="tlbItemHelp_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="tlbItemNew_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>جدید</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_GridPersonnelMultiDateFeatures_PersonnelMultiDateFeatures.ToolTip" xml:space="preserve">
+    <value>تازه سازی</value>
+  </data>
+  <data name="tlbItemSave_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="AddComplete" xml:space="preserve">
+    <value>عملیات درج با موفقیت به اتمام رسید</value>
+  </data>
+  <data name="AssignRuleDateFormatProblem" xml:space="preserve">
+    <value>قالب بندی تاریخ معتبر نمی باشد</value>
+  </data>
+  <data name="AssignRuleDateSmallerThanStandardValue" xml:space="preserve">
+    <value> مقدار تاریخ کوچک تر از مقدار استاندارد تاریخ می باشد</value>
+  </data>
+  <data name="AssignRuleFromDateGreaterThanToDate" xml:space="preserve">
+    <value>تاریخ شروع  قانون از تاریخ پایان قانون بزرگ تر است</value>
+  </data>
+  <data name="AssignRuleIdNotExsits" xml:space="preserve">
+    <value>گروه قانون  با این شناسه موجود نمی باشد</value>
+  </data>
+  <data name="AssignRulePersonIdNotExsits" xml:space="preserve">
+    <value>پرسنلی با این شناسه موجود نمی باشد</value>
+  </data>
+  <data name="DeleteComplete" xml:space="preserve">
+    <value>عملیات حذف با موفقیت به اتمام رسید</value>
+  </data>
+  <data name="EditComplete" xml:space="preserve">
+    <value>عملیات ویرایش با موفقیت به اتمام رسید</value>
+  </data>
+  <data name="ItemNotExist" xml:space="preserve">
+    <value>گروه قانون پرسنل با این شناسه موجود نمی باشد</value>
+  </data>
+  <data name="NoRuleGroupPersonnelMultiDateFeatureselectedforDelete" xml:space="preserve">
+    <value>گروه قانون پرسنل برای حذف انتخاب نگردیده است</value>
+  </data>
+  <data name="NoRuleGroupPersonnelMultiDateFeatureselectedforEdit" xml:space="preserve">
+    <value>گروه قانون پرسنل برای ویرایش انتخاب نگردیده است</value>
+  </data>
+  <data name="RetErrorType" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="RetFatalErrorType" xml:space="preserve">
+    <value>خطای سیستمی</value>
+  </data>
+  <data name="RetSuccessType" xml:space="preserve">
+    <value>نتیجه</value>
+  </data>
+  <data name="tlbItemCancel_TlbCancel.Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="tlbItemOk_TlbOkConfirm.Text" xml:space="preserve">
+    <value>تائید</value>
+  </data>
+  <data name="RetFatalErrorIdentifier" xml:space="preserve">
+    <value>شناسه خطا :</value>
+  </data>
+  <data name="hfConnectionError_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>خطای ارتباط با سرور</value>
+  </data>
+  <data name="hfErrorType_PersonnelMultiDateFeatures.Value" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="tlbItemFormReconstruction_TlbPersonnelMultiDateFeatures.Text" xml:space="preserve">
+    <value>بازسازی فرم</value>
+  </data>
+  <data name="OperationError" xml:space="preserve">
+    <value>خطا در عملیات</value>
+  </data>
+  <data name="IllegalServiceAccess" xml:space="preserve">
+    <value>دسترسی غیر مجاز به سرویس.</value>
+  </data>
+  <data name="UIValidationMinOneMustBeActive" xml:space="preserve">
+    <value>حداقل یکی از قوانین بستن محاسبات باید فعال باشد</value>
+  </data>
+  <data name="UIValidationR3MustBeActive" xml:space="preserve">
+    <value>قانون &lt;محاسبات تا تاریخ _ بسته شود&gt; باید فعال باشد</value>
+  </data>
+  <data name="AssignRuleDateHasConfilict" xml:space="preserve">
+    <value>تداخل در بازه های تاریخ های قوانین تخصیص داده شده</value>
+  </data>
+  <data name="clmnContractTitle_GridPersonnelMultiDateFeatures_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>عنوان قرارداد</value>
+  </data>
+  <data name="clmnRuleGroupName_GridPersonnelMultiDateFeatures_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>نام گروه قانون</value>
+  </data>
+  <data name="hfContractCloseMessage_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>آیا از فرم قراردادهای پرسنل خارج می شوید ؟</value>
+  </data>
+  <data name="hfContractDeleteMessage_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>آیا این قرارداد پرسنل را حذف می کنید ؟</value>
+  </data>
+  <data name="hfContractsheader_PersonnelMultiDateFeatures_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>قراردادهای پرسنل</value>
+  </data>
+  <data name="hfContractsTitle_DialogPersonnelMultiDateFeatures" xml:space="preserve">
+    <value>قراردادهای پرسنل</value>
+  </data>
+  <data name="hfRuleGroupCloseMessage_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>آیا از فرم گروه های قانون پرسنل خارج می شوید ؟</value>
+  </data>
+  <data name="hfRuleGroupDeleteMessage_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>آیا این گروه قانون پرسنل را حذف می کنید ؟</value>
+  </data>
+  <data name="hfRuleGroupsheader_PersonnelMultiDateFeatures_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>گروه های قانون پرسنل</value>
+  </data>
+  <data name="hfRuleGroupsTitle_DialogPersonnelMultiDateFeatures" xml:space="preserve">
+    <value>گروه های قانون پرسنل</value>
+  </data>
+  <data name="lblContractTitle_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>عنوان قرارداد :</value>
+  </data>
+  <data name="lblRuleGroupName_PersonnelMultiDateFeatures" xml:space="preserve">
+    <value>نام گروه قانون :</value>
+  </data>
+  <data name="NoContractPersonnelMultiDateFeatureselectedforDelete" xml:space="preserve">
+    <value>قرارداد پرسنل برای حذف انتخاب نگردیده است</value>
+  </data>
+  <data name="NoContractPersonnelMultiDateFeatureselectedforEdit" xml:space="preserve">
+    <value>قرارداد پرسنل برای ویرایش انتخاب نگردیده است</value>
+  </data>
+  <data name="PersonContractAssignmentContractIdNotExsits" xml:space="preserve">
+    <value>قرارداد با این شناسه موجود نمی باشد</value>
+  </data>
+  <data name="PersonContractAssignmentDateHasConfilict" xml:space="preserve">
+    <value>تداخل در بازه های تاریخ های قراردادهای تخصیص داده شده</value>
+  </data>
+  <data name="PersonContractAssignmentDateSmallerThanStandardValue" xml:space="preserve">
+    <value>مقدار تاریخ کوچک تر از مقدار استاندارد تاریخ می باشد</value>
+  </data>
+  <data name="PersonContractAssignmentFromDateGreaterThanToDate" xml:space="preserve">
+    <value>تاریخ شروع قرارداد از تاریخ پایان قرارداد بزرگ تر است</value>
+  </data>
+  <data name="PersonContractAssignmentPersonIdNotExsits" xml:space="preserve">
+    <value>پرسنلی با این شناسه موجود نمی باشد</value>
+  </data>
+  <data name="PersonMustHaveOneContractAssignment" xml:space="preserve">
+    <value>حداقل یک قرارداد باید به پرسنل تخصیص داده شده باشد</value>
+  </data>
+  <data name="tlbItemClear_TlbClear_ToDateCalendars_PersonnelMultiDateFeatures.ToolTip" xml:space="preserve">
+    <value>پاک کردن</value>
+  </data>
+  <data name="personContractAssignmentFromDateMustNotLessThanEmploymentDate" xml:space="preserve">
+    <value>تاریخ انتساب ابتدای قرارداد نباید از تاریخ استخدام کوچکتر باشد</value>
+  </data>
+  <data name="PersonMustHaveOneRuleAssignment" xml:space="preserve">
+    <value>حداقل یک قانون باید به پرسنل تخصیص داده شده باشد</value>
+  </data>
+</root>

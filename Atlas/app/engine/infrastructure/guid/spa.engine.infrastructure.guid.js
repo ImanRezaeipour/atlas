@@ -1,0 +1,1 @@
+﻿define(function () { function x() { var x = (new Date).getTime(), n = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (n) { var e = (x + 16 * Math.random()) % 16 | 0; return x = Math.floor(x / 16), ("x" == n ? e : 3 & e | 8).toString(16) }); return n } return { newGuid: x } });

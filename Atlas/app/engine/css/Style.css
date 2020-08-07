@@ -1,0 +1,15 @@
+﻿.panel-warning>.panel-heading {
+    color: #fff;
+    background-color: #607d8b;
+    border-color: #faebcc;
+}
+.panel-blue {
+background-color: #f5f5f5;
+}
+.table>tbody>tr.even {
+    background-color: #fff;
+}
+.table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>th {
+    background-color: #efefef;
+    vertical-align: middle;
+}

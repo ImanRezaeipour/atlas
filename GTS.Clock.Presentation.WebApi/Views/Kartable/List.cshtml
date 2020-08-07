@@ -1,0 +1,40 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="btn-toolbar">
+            <button type="button" class="btn btn-default pull-right" data-bind="click: displaySearch">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <spa-widget-loader params="loading: $component.loading"></spa-widget-loader>
+        <div class="form-horizontal" data-bind="visible: displayFilter">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">تعداد آیتم :</label>
+                <div class="col-sm-1">
+                    <select class="form-control" data-bind="options: dtPageSizes, selectedOptions: dtPageSize"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">نام :</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" data-bind="textInput: firstName" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">نام خانوادگی :</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" data-bind="textInput: lastName" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-info" data-bind="click: search">جستجو</button>
+                    <button class="btn btn-default" data-bind="click: clear">لغو فیلتر</button>
+                </div>
+            </div>
+        </div>
+        <span data-bind="text: selectedId"></span>
+        <table class="table table-bordered table-striped" data-bind="dataTable: kartableDataTable"></table>
+    </div>
+</div>

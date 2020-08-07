@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fed555a6-3c85-46ae-9b63-3f61a507bda7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5672/TrafficWebService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TrafficWebService.xsd" MetadataType="Schema" ID="4cde9b9b-04c6-43e9-b677-6d0d109ac3f8" SourceId="1" SourceUrl="http://localhost:5672/TrafficWebService.svc?xsd=xsd3" />
+    <MetadataFile FileName="TrafficWebService1.xsd" MetadataType="Schema" ID="36e92e9f-2aee-4b82-8938-4d3522546c8c" SourceId="1" SourceUrl="http://localhost:5672/TrafficWebService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TrafficWebService.disco" MetadataType="Disco" ID="c0824c30-691a-498c-b280-5a05dd10dc1f" SourceId="1" SourceUrl="http://localhost:5672/TrafficWebService.svc?disco" />
+    <MetadataFile FileName="TrafficWebService.wsdl" MetadataType="Wsdl" ID="9e47232a-203b-4cdc-9797-0d2fac36f2e6" SourceId="1" SourceUrl="http://localhost:5672/TrafficWebService.svc?wsdl" />
+    <MetadataFile FileName="TrafficWebService2.xsd" MetadataType="Schema" ID="70f6bf6d-4e60-431f-97ed-216d964111aa" SourceId="1" SourceUrl="http://localhost:5672/TrafficWebService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TrafficWebService3.xsd" MetadataType="Schema" ID="c4b776ca-56ac-4749-b0ab-7bc7324f5b94" SourceId="1" SourceUrl="http://localhost:5672/TrafficWebService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

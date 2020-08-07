@@ -1,0 +1,54 @@
+﻿
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="btn-toolbar">
+            <button type="button" class="btn btn-default pull-right" data-bind="click: displaySearch" title="جستجو">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button type="button" class="btn btn-default pull-right" data-bind="click: edit" title="ویرایش">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </button>
+            <button type="button" class="btn btn-default pull-right" data-bind="click: refresh" title="به روز رسانی اطلاعات">
+                <span class="glyphicon glyphicon-refresh"></span>
+            </button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <spa-widget-loader params="loading: $component.loading"></spa-widget-loader>
+
+        <div class="form-horizontal" data-bind="visible: displayFilter">
+            <div class="form-group">
+                <label class="col-sm-1 col-xs-4 control-label">تاریخ :</label>
+                <div class="col-sm-1 col-xs-4">
+                    <select class="form-control" name="years" data-bind="select: years"></select>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <select class="form-control" name="months" data-bind="select: months"></select>
+                </div>
+                <label class="col-sm-1 col-xs-12 control-label">واحد :</label>
+                <div class="col-sm-4 col-xs-12">
+                    <div id="dropDownButton">
+                        <div style="border: none;" id='jqxTree'>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-info" data-bind="click: search">جستجو</button>
+                    <button class="btn btn-default" data-bind="click: clear">لغو فیلتر</button>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" data-bind="dataTable: overtimeTotalPersonDataTable"></table>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" data-bind="dataTable: overtimePersonDataTable">
+                 
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<spa-widget-modal params="{modal : modal}"></spa-widget-modal>

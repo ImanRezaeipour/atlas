@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Concepts.YearlyHolidayWorkGroups, GTS.Clock.Model"
+         table ="TA_YearlyHolidayWorkGroups" lazy="true">
+    <id name="ID" access="property"  column="YearlyHolidayWorkGroups_ID" >
+      <generator class="native" />
+    </id>
+    <property  name="Year"   access="property"  column="YearlyHolidayWorkGroups_Year" />
+    <many-to-one name="calendarType" access="property"  class="GTS.Clock.Model.Concepts.CalendarType, GTS.Clock.Model" cascade="none"  column=" YearlyHolidayWorkGroup_CalendarTypeID"  update="false" />
+    <many-to-one name="workGroup" access="property" class="GTS.Clock.Model.Concepts.WorkGroup, GTS.Clock.Model" cascade="none" column="YearlyHolidayWorkGroups_WorkGroupID"  update="false" />
+    
+  </class>
+</hibernate-mapping>
+

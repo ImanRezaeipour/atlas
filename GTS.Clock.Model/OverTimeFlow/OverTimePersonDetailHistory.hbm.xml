@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+
+  <class name="GTS.Clock.Model.OverTimeFlow.OverTimePersonDetailHistory, GTS.Clock.Model" table ="TA_OverTimePersonDetailHistory" lazy="true">
+
+    <id name="ID" access="property"  column="Otph_ID" >
+      <generator class="native" />
+    </id>
+
+    <property name="RefrenceId"  access="property" column="Otph_RefrenceId" />
+    <property name="Title" access="property" column="Otph_Title" />
+    <property name="NewValue"  access="property" column="Otph_NewValue" />
+    <property name="OldValue"  access="property" column="Otph_OldValue" />
+    <property name="ModifiedDate"  access="property" column="Otph_ModifiedDate" />
+    <property name="Period"  access="property" column="Otph_Period" />
+    <property name="IPAddress"  access="property" column="Otph_IPAddress" />
+    
+    <many-to-one name="Person" column="Otph_PrsID" class="GTS.Clock.Model.Person, GTS.Clock.Model" not-null="true"/>
+    <many-to-one name="ModifiedBy" column="Otph_ModifiedBy" class="GTS.Clock.Model.Person, GTS.Clock.Model" />
+  </class>
+</hibernate-mapping>

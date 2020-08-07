@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+
+  <class name="GTS.Clock.Model.OverTimeFlow.OverTimeDetail, GTS.Clock.Model" table ="TA_OverTimeDetail" lazy="true">
+
+    <id name="ID" access="property"  column="OverTimeDtl_ID" >
+      <generator class="native" />
+    </id>
+ 
+    <property name="MaxOverTime" access="property" column="OverTimeDtl_MaxOverTime" />
+    <property name="MaxHoliday"  access="property" column="OverTimeDtl_MaxHoliday" />
+    <property name="MaxNightly"  access="property" column="OverTimeDtl_MaxNightly" />
+    <property name="ModifiedDate"  access="property" column="OverTimeDtl_ModifiedDate" />
+    
+    <many-to-one name="OverTime" column="OverTimeDtl_OverTimeID" class="GTS.Clock.Model.OverTimeFlow.OverTime, GTS.Clock.Model" not-null="true"/>
+    <many-to-one name="Department" column="OverTimeDtl_DepartmentId" class="GTS.Clock.Model.Charts.Department, GTS.Clock.Model" not-null="true"/>
+    <many-to-one name="ModifiedBy" column="OverTimeDtl_ModifiedBy" class="GTS.Clock.Model.Person, GTS.Clock.Model" />
+    
+  </class>
+</hibernate-mapping>

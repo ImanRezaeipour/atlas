@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.DesignedRule, GTS.Clock.Model"
+         table="TA_DesignedRule" lazy="true">
+    <id name="ID" access="property" column="DsgRle_ID">
+      <generator class="native"/>
+    </id>
+    <property name="CSharpCode" access="property" column="DsgRle_CSharpCode"/>
+    <property name="VariablesObject" access="property" column="DsgRle_VariablesObject" />
+    <property name="ParameterObject" access="property" column="DsgRle_ParameterObject" />
+    <property name="RuleObject" access="property" column="DsgRle_RuleObject"  />
+    <property name="RuleStateObject" access="property" column="DsgRle_RuleStateObject" />
+    <property name="RulePriority" access="property" column="DsgRle_RulePriority" />
+    <property name="PersionScript" access="property" column="DsgRle_RuleDescription" />
+    <property name="RuleRgisterDate" access="property" column="DsgRle_RuleRgisterDate" />
+    <property name="RuleEstate" access="property" column="DsgRle_RuleEstate"/>
+    <many-to-one name="RuleTemplate" column="DsgRle_RuleTemplateID" class="GTS.Clock.Model.RuleTemplate, GTS.Clock.Model" cascade="none"/>
+    <!--<property name="RuleTemplate"  access="property" column="DsgRle_RuleTemplateID"  />-->
+  
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+D:\TMI\Atlas\GTS.Clock.Model\obj\Debug\GTS.Clock.Model.csprojResolveAssemblyReference.cache
+D:\TMI\Atlas\GTS.Clock.Model\obj\Debug\GTS.Clock.Model.NominationDictionary.resources
+D:\TMI\Atlas\GTS.Clock.Model\obj\Debug\GTS.Clock.Model.csproj.GenerateResource.Cache
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\GTS.Clock.Model.dll.config
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\GTS.Clock.Model.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\GTS.Clock.Model.pdb
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\GTS.Clock.Infrastructure.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\log4net.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\SKGL.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\NHibernate.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\AtlasEncryption.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\Remotion.Data.Linq.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\Antlr3.Runtime.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\Iesi.Collections.dll
+D:\TMI\Atlas\GTS.Clock.Model\bin\Debug\GTS.Clock.Infrastructure.pdb
+D:\TMI\Atlas\GTS.Clock.Model\obj\Debug\GTS.Clock.Model.dll
+D:\TMI\Atlas\GTS.Clock.Model\obj\Debug\GTS.Clock.Model.pdb

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5672/TrafficWebService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GTS.Clock.Infrastructure" />
+  <xs:import schemaLocation="http://localhost:5672/TrafficWebService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="TransferTrafficsByConditions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="operatorPersonID" type="xs:decimal" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GTS.Clock.Infrastructure" minOccurs="0" name="TTM" type="q1:TrafficTransferMode" />
+        <xs:element minOccurs="0" name="machineID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="fromDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="toDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="toTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromRecord" type="xs:int" />
+        <xs:element minOccurs="0" name="toRecord" type="xs:int" />
+        <xs:element minOccurs="0" name="fromIdentifier" type="xs:decimal" />
+        <xs:element minOccurs="0" name="toIdentifier" type="xs:decimal" />
+        <xs:element minOccurs="0" name="transferDay" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="transferTime" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GTS.Clock.Infrastructure" minOccurs="0" name="TTT" type="q2:TrafficTransferType" />
+        <xs:element minOccurs="0" name="IsIntegralConditions" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrafficTranferCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrafficTranferCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetTrafficTranferCountResult" nillable="true" type="q3:ArrayOfKeyValueOfstringint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTrafficTransferCounts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearTrafficTransferCountsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

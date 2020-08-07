@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+
+  <class name="GTS.Clock.Model.General.SendPersonFunctionLog, GTS.Clock.Model" table ="TA_SendPersonFunctionLog" lazy="true">
+
+    <id name="ID" access="property"  column="log_ID" >
+      <generator class="native" />
+    </id>
+
+    <property name="Year"  access="property" column="log_Year" />
+    <property name="Month"  access="property" column="log_Month" />
+    <property name="Result"  access="property" column="log_Result" />
+    <property name="ModifiedDate"  access="property" column="log_ModifiedDate" />
+    <property name="IPAddress"  access="property" column="log_IPAddress" />
+    <property name="JsonObj"  access="property" column="log_Object" />
+    
+    <many-to-one name="Person" column="log_PrsID" class="GTS.Clock.Model.Person, GTS.Clock.Model" not-null="true"/>
+    <many-to-one name="ModifiedBy" column="log_ModifiedBy" class="GTS.Clock.Model.Person, GTS.Clock.Model" not-null="true"/>
+  </class>
+</hibernate-mapping>
+ 

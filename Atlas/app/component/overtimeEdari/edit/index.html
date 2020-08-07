@@ -1,0 +1,122 @@
+﻿<form class="form-horizontal" data-bind="formValidator: validator">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">پرسنل</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" readonly="readonly" name="LastName" data-bind="textInput : Person">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">اضافه کار تشویقی</label>
+                <div class="col-sm-7">
+                    <input type="number" class="form-control" name="MaxOverTime" data-bind="textInput :MaxOverTime , attr: {readOnly: HasOverTime }">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">تعطیل کاری تشویقی</label>
+                <div class="col-sm-7">
+                    <input type="number" class="form-control" name="MaxHolidayWork" data-bind="textInput :MaxHolidayWork , attr: {readOnly: HasHolidayWork }">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">شب کاری تشویقی</label>
+                <div class="col-sm-7">
+                    <input type="number" class="form-control" name="MaxNightWork" data-bind="textInput :MaxNightWork , attr: {readOnly: HasNightWork }">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            ویرایش نتایج محاسبات
+        </div>
+        <div class="panel-body" data-bind="visible: !IsArchiveEnable()">
+            <div class="alert alert-danger" role="alert">
+                <strong>اطلاعات کارکرد پرسنل آرشیو نشده است!</strong> در صورت نیاز به اصلاح ابتدا کارکرد پرسنل را از طریق فرم ویرایش نتایج محاسبات آرشیو نمایید.
+            </div>
+        </div>
+        <div class="panel-body" data-bind="visible: IsArchiveEnable()">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">ناهار</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" name="P1" data-bind="textInput :P1 , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">تعطیل ناهار</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" name="P2" data-bind="textInput :P2 , attr: {readOnly: !IsArchiveEnable()} ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">اضافه کاری</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="P3" data-bind="textInput :P3 , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">تعطیل کاری</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="P4" data-bind="textInput :P4  , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">شب کاری</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="P5" data-bind="textInput :P5  , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">مرخصی بی حقوق</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" name="P6" data-bind="textInput :P6  , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">مرخصی استحقاقی</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" name="P7" data-bind="textInput :P7  , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">مرخصی استعلاجی</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" name="P8" data-bind="textInput :P8  , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">غیبت</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" name="P9" data-bind="textInput :P9  , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">کسر کار</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="P10" data-bind="textInput :P10 , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">کارکرد</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" name="P11" data-bind="textInput :P11 , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">کارکرد ساعتی</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="P12" data-bind="textInput :P12 , attr: {readOnly: !IsArchiveEnable() }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

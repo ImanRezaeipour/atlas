@@ -1,0 +1,30 @@
+﻿body {
+}
+
+.HHeadingFloatTableClass 
+{
+  background-image: url('../images/Grid/grid_headerBg3.gif');
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  Font-family: Tahoma;
+  HEIGHT: 25px;  
+}
+
+.HHeadingFloatContainerClass
+{
+  background-image: url('../images/Grid/grid_headerBg3.gif');    
+}
+
+.HHeadingFloatTextClass
+{
+  PADDING-RIGHT: 10px;
+  PADDING-LEFT: 4px;
+  HEIGHT: 25px;
+  text-align :center;
+  color:White;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  Font-family: Tahoma;
+  text-wrap:break-word !important;
+  white-space:normal !important;     
+}

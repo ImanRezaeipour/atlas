@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="20b040e9-db79-45c8-a78b-278e60fa51c6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://additionalservices.tehran.iri:6502/Function.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Function.xsd" MetadataType="Schema" ID="b595f1ce-5919-47e3-ac4f-994f546bd6d8" SourceId="1" SourceUrl="http://additionalservices.tehran.iri:6502/Function.svc?xsd=xsd1" />
+    <MetadataFile FileName="Function.wsdl" MetadataType="Wsdl" ID="7113d171-0946-4bfb-ac93-09523f7066b0" SourceId="1" SourceUrl="http://additionalservices.tehran.iri:6502/Function.svc?wsdl" />
+    <MetadataFile FileName="Function1.xsd" MetadataType="Schema" ID="204b4108-9308-4a19-aaf2-47036eef3013" SourceId="1" SourceUrl="http://additionalservices.tehran.iri:6502/Function.svc?xsd=xsd2" />
+    <MetadataFile FileName="Function.disco" MetadataType="Disco" ID="89d774ce-96d3-492f-af9c-e92d18718cf3" SourceId="1" SourceUrl="http://additionalservices.tehran.iri:6502/Function.svc?disco" />
+    <MetadataFile FileName="Function2.xsd" MetadataType="Schema" ID="e66eb808-f0c6-48d3-a221-2ec7b56f9022" SourceId="1" SourceUrl="http://additionalservices.tehran.iri:6502/Function.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

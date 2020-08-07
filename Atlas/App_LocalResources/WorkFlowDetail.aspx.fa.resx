@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblSearchField_WorkFlowDetail.Text" xml:space="preserve">
+    <value>جستجو بر اساس :</value>
+  </data>
+  <data name="lblSearchResult_WorkFlowDetail.Text" xml:space="preserve">
+    <value>نتایج جستجو :</value>
+  </data>
+  <data name="lblSearchTerm_WorkFlowDetail.Text" xml:space="preserve">
+    <value>عبارت جستجو :</value>
+  </data>
+  <data name="tlbItemAccessLevelView_TlbWorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>نمایش سطوح دسترسی </value>
+  </data>
+  <data name="tlbItemExit_TlbWorkFlowDetail.Text" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="tlbItemFormReconstruction_TlbWorkFlowDetail.Text" xml:space="preserve">
+    <value>بازسازی فرم</value>
+  </data>
+  <data name="tlbItemHelp_TlbWorkFlowDetail.Text" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="WorkFlowDetailForm.dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="clmnManagersName_GridManagers_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>نام  مدیر</value>
+  </data>
+  <data name="hfheader_Managers_WorkFlowDetail.Value" xml:space="preserve">
+    <value>مدیران</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_GridManagers_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>بازسازی</value>
+  </data>
+  <data name="clmnAccessGroup_GridWorkFlows_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>گروه دسترسی</value>
+  </data>
+  <data name="clmnOperatorName_GridOperator_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>نام  اپراتور</value>
+  </data>
+  <data name="clmnPersonnelCode_GridOperator_WorkFlowDetail.Value" xml:space="preserve">
+    <value>شماره پرسنلی</value>
+  </data>
+  <data name="clmnSubstituteName_GridSubstitute_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>نام جانشین</value>
+  </data>
+  <data name="clmnWorkFlows_GridWorkFlows_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>نام جریان</value>
+  </data>
+  <data name="hfheader_Operator_WorkFlowDetail.Value" xml:space="preserve">
+    <value>اپراتورها</value>
+  </data>
+  <data name="hfheader_Substitute_WorkFlowDetail.Value" xml:space="preserve">
+    <value>جانشین ها</value>
+  </data>
+  <data name="hfheader_UnderManagementPersonnel_WorkFlowDetail.Value" xml:space="preserve">
+    <value>پرسنل تحت مدیریت</value>
+  </data>
+  <data name="hfheader_WorkFlows_WorkFlowDetail.Value" xml:space="preserve">
+    <value>جریان های کاری</value>
+  </data>
+  <data name="InverseAlignObj.align" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_GridOperator_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>بازسازی</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_GridSubstitute_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>بازسازی</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_GridWorkFlows_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>بازسازی</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_trvUnderManagementPersonnel_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>بازسازی</value>
+  </data>
+  <data name="trvUnderManagementPersonnel_WorkFlowDetail.LineImagesFolderUrl" xml:space="preserve">
+    <value>Images/TreeView/RightLines</value>
+  </data>
+  <data name="clmnManagersCode_GridManagers_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>بارکد</value>
+  </data>
+  <data name="clmnOperatorCode_GridOperator_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>بارکد</value>
+  </data>
+  <data name="clmnSubstituteCode_GridSubstitute_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>بارکد</value>
+  </data>
+  <data name="hfCloseMessage__WorkFlowDetail.Value" xml:space="preserve">
+    <value>آیا از فرم جزئیات جریان های کاری خارج می شوید ؟</value>
+  </data>
+  <data name="hfloadingPanel_GridManagers_WorkFlowDetail.Value" xml:space="preserve">
+    <value>در حال بارگیری...</value>
+  </data>
+  <data name="hfloadingPanel_GridOperator_WorkFlowDetail.Value" xml:space="preserve">
+    <value>در حال بارگیری...</value>
+  </data>
+  <data name="hfloadingPanel_GridSubstitute_WorkFlowDetail.Value" xml:space="preserve">
+    <value>در حال بارگیری...</value>
+  </data>
+  <data name="hfloadingPanel_GridWorkFlows_WorkFlowDetail.Value" xml:space="preserve">
+    <value>در حال بارگیری...</value>
+  </data>
+  <data name="hfloadingPanel_trvUnderManagementPersonnel_WorkFlowDetail.Value" xml:space="preserve">
+    <value>در حال بارگیری...</value>
+  </data>
+  <data name="tlbItemCancel_TlbCancelConfirm.Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="tlbItemOk_TlbOkConfirm.Text" xml:space="preserve">
+    <value>تائید</value>
+  </data>
+  <data name="hfcmbAlarm_WorkFlowDetail.Value" xml:space="preserve">
+    <value>انتخاب کنید</value>
+  </data>
+  <data name="hfConnectionError_WorkFlowDetail.Value" xml:space="preserve">
+    <value>خطای ارتباط با سرور</value>
+  </data>
+  <data name="hfErrorType_WorkFlowDetail.Value" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>مدیر</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>اپراتور</value>
+  </data>
+  <data name="Personnel" xml:space="preserve">
+    <value>پرسنل</value>
+  </data>
+  <data name="Substitute" xml:space="preserve">
+    <value>جانشین</value>
+  </data>
+  <data name="WorkFlow" xml:space="preserve">
+    <value>جریان کاری</value>
+  </data>
+  <data name="clmnSubstituteFromDate_GridSubstitute_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="clmnSubstituteToDate_GridSubstitute_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="clmnOrganizationName_GridManagers_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>نام پست سازمانی</value>
+  </data>
+  <data name="tlbItemView_TlbView_WorkFlowDetail.Text" xml:space="preserve">
+    <value>نمایش</value>
+  </data>
+  <data name="hfheader_AccessLevelBox_AccessGroups.Value" xml:space="preserve">
+    <value>سطوح دسترسی</value>
+  </data>
+  <data name="hfTitle_DialogAccessLevel.Value" xml:space="preserve">
+    <value>سطوح دسترسی</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_trvAccessLevel_AccessGroups.ToolTip" xml:space="preserve">
+    <value>بازسازی</value>
+  </data>
+  <data name="trvAccessLevel_AccessGroups.LineImagesFolderUrl" xml:space="preserve">
+    <value>Images/TreeView/RightLines</value>
+  </data>
+  <data name="lblPersonnel_WorkFlowDetail.Text" xml:space="preserve">
+    <value>پرسنل</value>
+  </data>
+  <data name="OrgNode_trvPosts_Post" xml:space="preserve">
+    <value>سازمان</value>
+  </data>
+  <data name="tlbItemAdvancedSearch_TlbAdvancedSearch_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>جستجوی پیشرفته</value>
+  </data>
+  <data name="tlbItemBefore_TlbPaging_PersonnelSearch_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>قبلی</value>
+  </data>
+  <data name="tlbItemFirst_TlbPaging_PersonnelSearch_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>اولین</value>
+  </data>
+  <data name="tlbItemLast_TlbPaging_PersonnelSearch_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>آخرین</value>
+  </data>
+  <data name="tlbItemNext_TlbPaging_PersonnelSearch_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>بعدی</value>
+  </data>
+  <data name="tlbItemRefresh_TlbPaging_PersonnelSearch_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>بازسازی فرم</value>
+  </data>
+  <data name="tlbItemSearch_TlbSearchPersonnel_WorkFlowDetail.ToolTip" xml:space="preserve">
+    <value>جستجو</value>
+  </data>
+  <data name="trvUnderManagementPersonnel_WorkFlowDetail" xml:space="preserve">
+    <value>Images/TreeView/RightLines</value>
+  </data>
+  <data name="hfclmnBarCode_cmbPersonnel_WorkFlowDetail.Value" xml:space="preserve">
+    <value>بارکد</value>
+  </data>
+  <data name="hfclmnCardNum_cmbPersonnel_WorkFlowDetail.Value" xml:space="preserve">
+    <value>شماره کارت</value>
+  </data>
+  <data name="hfclmnName_cmbPersonnel_WorkFlowDetail.Value" xml:space="preserve">
+    <value>نام و نام خانوادگی</value>
+  </data>
+  <data name="hfheader_SearchByPersonnelBox_WorkFlowDetail.Value" xml:space="preserve">
+    <value>انتخاب پرسنل</value>
+  </data>
+  <data name="hfTitle_DialogWorkFlowDetail.Value" xml:space="preserve">
+    <value>جزئیات جریان کاری</value>
+  </data>
+  <data name="tlbItemView_TlbViewWorkFlow_WorkFlowDetail.Text" xml:space="preserve">
+    <value>نمایش</value>
+  </data>
+  <data name="UIValidationR3MustBeActive" xml:space="preserve">
+    <value>قانون &lt;محاسبات تا تاریخ _ بسته شود&gt; باید فعال باشد</value>
+  </data>
+  <data name="clmnActiveFlow_GridWorkFlows_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>جریان فعال</value>
+  </data>
+  <data name="clmnMainFlow_GridWorkFlows_WorkFlowDetail.HeadingText" xml:space="preserve">
+    <value>جریان اصلی</value>
+  </data>
+  <data name="tlbItemUnderManagmentPersonnelsRetrieve_TlbGridWorkFlows.ToolTip" xml:space="preserve">
+    <value>بازیابی پرسنل تحت مدیریت جریان</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RetrieveUnderManagementPersonnelsComplete" xml:space="preserve">
+    <value>بازیابی پرسنل تحت مدیریت با موفقیت به اتمام رسید</value>
+  </data>
+  <data name="RetSuccessType" xml:space="preserve">
+    <value>نتیجه</value>
+  </data>
+</root>

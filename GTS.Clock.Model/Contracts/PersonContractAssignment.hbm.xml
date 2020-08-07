@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Contracts.PersonContractAssignment, GTS.Clock.Model"
+         table ="TA_PersonContractAssignment" lazy="true">
+    <id name="ID" access="property"  column="personContractAssignment_ID" >
+      <generator class="native" />
+    </id>
+    <property name="FromDate" access="property" column="personContractAssignment_FromDate" />
+    <property name="ToDate" access="property" column="personContractAssignment_ToDate" />
+    <property name="IsDeleted" access="property" column="personContractAssignment_IsDeleted" />
+
+
+    <many-to-one name="Contract" class="GTS.Clock.Model.Contracts.Contract, GTS.Clock.Model" column="personContractAssignment_ContractID" lazy="proxy" />
+    <many-to-one name="Person" class="GTS.Clock.Model.Person, GTS.Clock.Model" column="personContractAssignment_PersonID" lazy="proxy" />
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddComplete" xml:space="preserve">
+    <value>Insert Operation Completed Successfully</value>
+  </data>
+  <data name="AlignObj.align" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="DeleteComplete" xml:space="preserve">
+    <value>Delete Operation Completed Successfully</value>
+  </data>
+  <data name="EditComplete" xml:space="preserve">
+    <value>Update Operation Completed Successfully</value>
+  </data>
+  <data name="hfAdd_Roles.Value" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="hfCloseMessage_Roles.Value" xml:space="preserve">
+    <value>Do you Exit from Roles from ?</value>
+  </data>
+  <data name="hfDeleteMessage_Roles.Value" xml:space="preserve">
+    <value>Do you Delete this Role ?</value>
+  </data>
+  <data name="hfDelete_Roles.Value" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="hfEdit_Roles.Value" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="hfheader_RoleDetails_Roles.Value" xml:space="preserve">
+    <value>Role Details</value>
+  </data>
+  <data name="hfheader_Roles_Roles.Value" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="hfloadingPanel_trvRoles_Roles.Value" xml:space="preserve">
+    <value>Loading ...</value>
+  </data>
+  <data name="hfView_Roles.Value" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="IllegalServiceAccess" xml:space="preserve">
+    <value>Illegal Service Access.</value>
+  </data>
+  <data name="InverseAlignObj.align" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="ItemNotExist" xml:space="preserve">
+    <value>No Role exists with this Identifier</value>
+  </data>
+  <data name="lblRoleCode_Roles.Text" xml:space="preserve">
+    <value>Role Code</value>
+  </data>
+  <data name="lblRoleName_Roles.Text" xml:space="preserve">
+    <value>Role Name</value>
+  </data>
+  <data name="NoRoleSelectedforDelete" xml:space="preserve">
+    <value>No Role Selected for Delete</value>
+  </data>
+  <data name="NoRoleSelectedforEdit" xml:space="preserve">
+    <value>No Role Selected for Edit</value>
+  </data>
+  <data name="RetErrorType" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="RetFatalErrorIdentifier" xml:space="preserve">
+    <value>Error Identifier:</value>
+  </data>
+  <data name="RetFatalErrorType" xml:space="preserve">
+    <value>Fatal Error</value>
+  </data>
+  <data name="RetSuccessType" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="RolesForm.dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="RolesNode_trvRoles_Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="tlbItemCancel_TlbCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tlbItemCancel_TlbRoles.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tlbItemDelete_TlbRoles.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="tlbItemEdit_TlbRoles.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="tlbItemExit_TlbRoles.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="tlbItemHelp_TlbRoles.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="tlbItemNew_TlbRoles.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="tlbItemOk_TlbOkConfirm.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="tlbItemRefresh_TlbRefresh_trvRoles_Roles.ToolTip" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="tlbItemSave_TlbRoles.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tlbItemUserInterfaceAccessLevels_TlbRoles.Text" xml:space="preserve">
+    <value>User Interface Access Levels</value>
+  </data>
+  <data name="trvRoles_Roles.LineImagesFolderUrl" xml:space="preserve">
+    <value>Images/TreeView/LeftLines</value>
+  </data>
+  <data name="RoleCodeReplication" xml:space="preserve">
+    <value>Role Code is Duplicated</value>
+  </data>
+  <data name="RoleNameReplication" xml:space="preserve">
+    <value>Role Name is Duplicated</value>
+  </data>
+  <data name="RoleNameRequierd" xml:space="preserve">
+    <value>Role Name is Not Valued</value>
+  </data>
+  <data name="RoleParentNotSpecified" xml:space="preserve">
+    <value>Parent Role is Not Selected</value>
+  </data>
+  <data name="RoleRootDeleteIllegal" xml:space="preserve">
+    <value>Role Root Delete is Illegal</value>
+  </data>
+  <data name="RoleUSedByUser" xml:space="preserve">
+    <value>Role is Assigned to User</value>
+  </data>
+  <data name="hfConnectionError_Roles.Value" xml:space="preserve">
+    <value>Server Error Connection</value>
+  </data>
+  <data name="hfErrorType_Roles.Value" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="tlbItemFormReconstruction_TlbRoles.Text" xml:space="preserve">
+    <value>Form Reconstruction</value>
+  </data>
+  <data name="OperationError" xml:space="preserve">
+    <value>Error in Operation</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UIValidationMinOneMustBeActive" xml:space="preserve">
+    <value>UIValidationMinOne MustBe Active</value>
+  </data>
+  <data name="AllowableOverTime" xml:space="preserve">
+    <value>AllowableOverTime</value>
+  </data>
+  <data name="DailyAbsence" xml:space="preserve">
+    <value>DailyAbsence</value>
+  </data>
+  <data name="DailyMeritoriouslyLeave" xml:space="preserve">
+    <value>DailyMeritoriouslyLeave</value>
+  </data>
+  <data name="DailyMission" xml:space="preserve">
+    <value>DailyMission</value>
+  </data>
+  <data name="DailyPureOperation" xml:space="preserve">
+    <value>DailyPureOperation</value>
+  </data>
+  <data name="DailySickLeave" xml:space="preserve">
+    <value>DailySickLeave</value>
+  </data>
+  <data name="DailyWithoutPayLeave" xml:space="preserve">
+    <value>DailyWithoutPayLeave</value>
+  </data>
+  <data name="DailyWithPayLeave" xml:space="preserve">
+    <value>DailyWithPayLeave</value>
+  </data>
+  <data name="DayName" xml:space="preserve">
+    <value>روز</value>
+  </data>
+  <data name="FifthEntrance" xml:space="preserve">
+    <value>FifthEntrance</value>
+  </data>
+  <data name="FifthExit" xml:space="preserve">
+    <value>FifthExit</value>
+  </data>
+  <data name="FirstEntrance" xml:space="preserve">
+    <value>FirstEntrance</value>
+  </data>
+  <data name="FirstExit" xml:space="preserve">
+    <value>FirstExit</value>
+  </data>
+  <data name="FourthEntrance" xml:space="preserve">
+    <value>FourthEntrance</value>
+  </data>
+  <data name="FourthExit" xml:space="preserve">
+    <value>FourthExit</value>
+  </data>
+  <data name="HostelryMission" xml:space="preserve">
+    <value>HostelryMission</value>
+  </data>
+  <data name="HourlyAllowableAbsence" xml:space="preserve">
+    <value>HourlyAllowableAbsence</value>
+  </data>
+  <data name="HourlyMeritoriouslyLeave" xml:space="preserve">
+    <value>HourlyMeritoriouslyLeave</value>
+  </data>
+  <data name="HourlyMission" xml:space="preserve">
+    <value>HourlyMission</value>
+  </data>
+  <data name="HourlyPureOperation" xml:space="preserve">
+    <value>HourlyPureOperation</value>
+  </data>
+  <data name="HourlySickLeave" xml:space="preserve">
+    <value>HourlySickLeave</value>
+  </data>
+  <data name="HourlyUnallowableAbsence" xml:space="preserve">
+    <value>HourlyUnallowableAbsence</value>
+  </data>
+  <data name="HourlyWithoutPayLeave" xml:space="preserve">
+    <value>HourlyWithoutPayLeave</value>
+  </data>
+  <data name="HourlyWithPayLeave" xml:space="preserve">
+    <value>HourlyWithPayLeave</value>
+  </data>
+  <data name="ImpureOperation" xml:space="preserve">
+    <value>ImpureOperation</value>
+  </data>
+  <data name="LastExit" xml:space="preserve">
+    <value>LastExit</value>
+  </data>
+  <data name="NecessaryOperation" xml:space="preserve">
+    <value>NecessaryOperation</value>
+  </data>
+  <data name="PresenceDuration" xml:space="preserve">
+    <value>PresenceDuration</value>
+  </data>
+  <data name="ReserveField1" xml:space="preserve">
+    <value>ReserveField1</value>
+  </data>
+  <data name="ReserveField10" xml:space="preserve">
+    <value>ReserveField10</value>
+  </data>
+  <data name="ReserveField2" xml:space="preserve">
+    <value>ReserveField2</value>
+  </data>
+  <data name="ReserveField3" xml:space="preserve">
+    <value>ReserveField3</value>
+  </data>
+  <data name="ReserveField4" xml:space="preserve">
+    <value>ReserveField4</value>
+  </data>
+  <data name="ReserveField5" xml:space="preserve">
+    <value>ReserveField5</value>
+  </data>
+  <data name="ReserveField6" xml:space="preserve">
+    <value>ReserveField6</value>
+  </data>
+  <data name="ReserveField7" xml:space="preserve">
+    <value>ReserveField7</value>
+  </data>
+  <data name="ReserveField8" xml:space="preserve">
+    <value>ReserveField8</value>
+  </data>
+  <data name="ReserveField9" xml:space="preserve">
+    <value>ReserveField9</value>
+  </data>
+  <data name="SecondEntrance" xml:space="preserve">
+    <value>SecondEntrance</value>
+  </data>
+  <data name="SecondExit" xml:space="preserve">
+    <value>SecondExit</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="TheDate" xml:space="preserve">
+    <value>TheDate</value>
+  </data>
+  <data name="ThirdEntrance" xml:space="preserve">
+    <value>ThirdEntrance</value>
+  </data>
+  <data name="ThirdExit" xml:space="preserve">
+    <value>ThirdExit</value>
+  </data>
+  <data name="UnallowableOverTime" xml:space="preserve">
+    <value>UnallowableOverTime</value>
+  </data>
+  <data name="clmnGridColumn_GridSettings_Roles.HeadingText" xml:space="preserve">
+    <value> Grid Settings </value>
+  </data>
+  <data name="clmnView_GridSettings_Roles.HeadingText" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="hfheader_GridSettings_Roles.Value" xml:space="preserve">
+    <value>Grid Settings</value>
+  </data>
+  <data name="lblSelectAll_GridSettings_Kartabl.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="tlbItemExit_TlbGridSettings.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="tlbItemGridSettings_TlbRoles.Text" xml:space="preserve">
+    <value>Monthly Operation Report Grid Settings</value>
+  </data>
+  <data name="tlbItemSave_TlbGridSettings.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value> Operation Completed Successfully</value>
+  </data>
+  <data name="UIValidationR3MustBeActive" xml:space="preserve">
+    <value>UIValidationR3 Must Be Active</value>
+  </data>
+  <data name="DayState" xml:space="preserve">
+    <value>Day State</value>
+  </data>
+</root>

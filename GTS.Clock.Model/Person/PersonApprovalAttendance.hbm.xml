@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+
+  <class name="GTS.Clock.Model.PersonApprovalAttendance, GTS.Clock.Model" table ="TA_PersonApprovalAttendance" lazy="false">
+    <id name="ID" access="property"  column="PrsApproval_ID" >
+      <generator class="native" />
+    </id>
+
+    <property name="Date"     access="property" column="PrsApproval_Date" />
+    <property name="Approved"     access="property" column="PrsApproval_Approved" />
+    <property name="RegisterDatetime"     access="property" column="PrsApproval_RegisterDatetime" />
+
+    <many-to-one name="Person" column="PrsApproval_PersonID" class="GTS.Clock.Model.Person, GTS.Clock.Model" />
+    <many-to-one name="RegisterPerson" column="PrsApproval_RegisterPersonID" class="GTS.Clock.Model.Person, GTS.Clock.Model" />
+  </class>
+</hibernate-mapping>

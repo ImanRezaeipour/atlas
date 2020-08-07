@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Concepts.CollectServiceRequest, GTS.Clock.Model"
+         table ="TA_CollectServiceRequest" lazy="false">
+    <id name="ID" access="property" column="CSRequest_ID">
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="FromTraffic"  column="CSRequest_FromBaseTrafficID" class="GTS.Clock.Model.Concepts.BasicTraffic, GTS.Clock.Model"  />
+
+<many-to-one name="ToTraffic"  column="CSRequest_ToBaseTrafficID" class="GTS.Clock.Model.Concepts.BasicTraffic, GTS.Clock.Model"  />
+<many-to-one name="Person"  column="CSRequest_PersonID" class="GTS.Clock.Model.Person, GTS.Clock.Model"  />
+ <many-to-one name="Precard"  column="CSRequest_PrecardID" class="GTS.Clock.Model.Concepts.Precard, GTS.Clock.Model"  />   
+    
+    <property name="Date" access="property" column="CSRequest_Date"/>
+    <property name="FromTime" access="property" column="CSRequest_FromTime"/>
+    <property name="ToTime" access="property" column="CSRequest_ToTime"/>
+    <property name="IsApplied" access="property" column="CSRequest_IsApplied"/>
+    <property name="OperationType" access="property" column="CSRequest_OperationType"/>
+    <property name="RegisterDate" access="property" column="CSRequest_RegisterDate"/>
+  </class>
+</hibernate-mapping>

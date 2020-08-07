@@ -1,0 +1,9 @@
+﻿
+.bulletedList
+{
+    font-family:Tahoma;
+    font-size:small;
+    font-weight:bold;
+    list-style-image:url('../images/bulletedList/ani-sh.gif');
+    color:White;    
+}

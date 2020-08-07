@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.RequestFlow.RequestHistory, GTS.Clock.Model"
+         table ="TA_RequestHistory" lazy="true">
+    <id name="ID" access="property"  column="RequestHistory_ID" >
+      <generator class="native" />
+    </id>
+    <property name="FromDate"     access="property" column="RequestHistory_FromDate" />
+    <property name="ToDate"     access="property" column="RequestHistory_ToDate" />
+    <property name="FromTime"     access="property" column="RequestHistory_FromTime" />
+    <property name="ToTime"     access="property" column="RequestHistory_ToTime" />
+    <property name="Duration"     access="property" column="RequestHistory_Duration" />
+    <property name="AttachmentFile"     access="property" column="RequestHistory_AttachmentFile" />
+    <many-to-one name="Request" column="RequestHistory_RequestID" class="GTS.Clock.Model.RequestFlow.Request, GTS.Clock.Model" not-null="true"/>
+
+
+  
+
+  </class>
+</hibernate-mapping>

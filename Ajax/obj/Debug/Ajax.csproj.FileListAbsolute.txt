@@ -1,0 +1,4 @@
+D:\TMI\Atlas\Ajax\bin\Debug\Ajax.dll
+D:\TMI\Atlas\Ajax\bin\Debug\Ajax.pdb
+D:\TMI\Atlas\Ajax\obj\Debug\Ajax.dll
+D:\TMI\Atlas\Ajax\obj\Debug\Ajax.pdb

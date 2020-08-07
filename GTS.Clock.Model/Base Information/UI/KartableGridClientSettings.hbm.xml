@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.UI.KartableGridClientSettings, GTS.Clock.Model"
+         table ="TA_GridKartableGridClientSettings" lazy="true">
+    <id name="ID" access="property"  column="ID" >
+      <generator class="native" />
+    </id>
+    <property name="Type"           access="property"   column="Typpe" />
+    <property name="FlowStatus"     access="property"   column="FlowStatus" />
+    <property name="FlowLevels"     access="property"   column="FlowLevels" />
+    <property name="RequestType"     access="property"   column="RequestType" />
+    <property name="RequestSource"   access="property"   column="RequestSource" />
+    <property name="Select"          access="property"   column="Sellect" />
+    <property name="Row"            access="property"   column="RAow" />
+    <property name="BarCode"            access="property"   column="BarCode" />
+    <property name="Applicant"            access="property"   column="Applicant" />
+    <property name="RequestTitle"            access="property"   column="RequestTitle" />
+    <property name="TheFromDate"            access="property"   column="TheFromDate" />
+    <property name="TheToDate"            access="property"   column="TheToDate" />
+    <property name="TheFromTime"            access="property"   column="TheFromTime" />
+    <property name="TheToTime"            access="property"   column="TheToTime" />
+    <property name="TheDuration"            access="property"   column="TheDuration" />
+    <property name="RegistrationDate"            access="property"   column="RegistrationDate" />
+    <property name="OperatorUser"            access="property"   column="OperatorUser" />
+    <property name="Description"            access="property"   column="DesScription" />
+    <property name="AttachmentFile"            access="property"   column="AttachmentFile" />
+    <property name="RequestHistory"            access="property"   column="RequestHistory" />
+    <property name="DepartmentName"            access="property"   column="Department" />
+    
+    <many-to-one name="UserSetting" column="UserSettingID" class="GTS.Clock.Model.AppSetting.UserSettings, GTS.Clock.Model" not-null="true"/>
+  </class>
+</hibernate-mapping>

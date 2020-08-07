@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Report.DesignedReportPersonInfoColumn, GTS.Clock.Model"
+         table ="TA_DesignedReportPersonInfoColumn" lazy="true">
+    <id name="ID" access="property"  column="DesignedReportPersonInfoColumn_ID" >
+      <generator class="native" />
+    </id>
+    <property name="FnName"     access="property" column="DesignedReportPersonInfoColumn_FnName" />
+    <property name="EnName"     access="property" column="DesignedReportPersonInfoColumn_EnName" />
+    <property name="Key"     access="property" column="DesignedReportPersonInfoColumn_Key" />
+    <property name="IsGroupColumn"     access="property" column="DesignedReportPersonInfoColumn_IsGroupColumn" />
+    <property name="IsReserveField"     access="property" column="DesignedReportPersonInfoColumn_IsReserveField" />
+
+
+  </class>
+</hibernate-mapping>

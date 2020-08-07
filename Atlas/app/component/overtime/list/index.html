@@ -1,0 +1,93 @@
+﻿<div class="panel panel-success">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="btn-toolbar">
+                    <button type="button" class="btn btn-default pull-right btn-primary" data-bind="click: displaySearch" title="جستجو">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button> 
+                    <button type="button" class="btn btn-default pull-right btn-warning" data-bind="click: refresh" title="به روز رسانی اطلاعات">
+                        <span class="glyphicon glyphicon-refresh"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-3 text-center">
+                <h5>بودجه بندی اضافه کاری تشویقی</h5>
+            </div>
+            <div class="col-sm-2 col-sm-offset-2">
+                <input type="text" class="form-control" readonly="readonly" name="username" data-bind="textInput : username">
+            </div>
+            <div class="col-sm-1">
+                <button type="button" class="btn btn-default pull-right btn-danger" data-bind="click: close" title="بستن فرم">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <spa-widget-loader params="loading: $component.loading"></spa-widget-loader>
+        <div class="form-horizontal" data-bind="slideVisible: displayFilter">
+            <div class="form-group">
+                <label class="col-sm-1 col-xs-4 control-label">تعداد آیتم :</label>
+                <div class="col-sm-1 col-xs-4">
+                    <select class="form-control" data-bind="options: dtPageSizes, selectedOptions: dtPageSize"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-1 col-xs-4 control-label">تاریخ :</label>
+                <div class="col-sm-1 col-xs-4">
+                    <select class="form-control" name="years" data-bind="select: years"></select>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <select class="form-control" name="months" data-bind="select: months"></select>
+                </div>
+
+                <label class="col-sm-1 col-xs-12 control-label">سازمان :</label>
+                <div class="col-sm-2 col-xs-12">
+                    <select class="form-control" name="departments" data-bind="select: departments"></select>
+                </div>
+                <label class="col-sm-1 col-xs-12 control-label">نام معاونت :</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" data-bind="textInput: departmentName" />
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-info" data-bind="click: search">نمایش</button>
+                    <button class="btn btn-default" data-bind="click: clear">لغو فیلتر</button>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                سرانه معاونت
+            </div>
+            <div class="panel-body panel-blue">
+                <div class="">
+                    <table class="table table-bordered table-striped" data-bind="dataTable: overtimeDataTable">
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>مجموع:</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<spa-widget-modal params="{modal : modal}"></spa-widget-modal>

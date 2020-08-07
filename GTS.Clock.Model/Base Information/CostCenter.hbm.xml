@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.BaseInformation.CostCenter, GTS.Clock.Model"
+         table ="TA_CostCenter" lazy="true">
+    <id name="ID" access="property"  column="Cost_ID" >
+      <generator class="native" />
+    </id>
+    <property name="Name"     access="property" column="Cost_Name" />
+    <property name="Code"     access="property" column="Cost_Code" />
+    <property name="Description"     access="property" column="Cost_Description" />
+
+    <bag name="TempList" table="TA_Temp" lazy="true" inverse="true">
+      <key column="temp_ObjectID"></key>
+      <one-to-many class="GTS.Clock.Model.Temp.Temp, GTS.Clock.Model"/>
+    </bag>
+
+  </class>
+</hibernate-mapping>

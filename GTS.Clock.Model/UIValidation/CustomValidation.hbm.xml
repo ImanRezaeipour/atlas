@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.UIValidation.CustomValidation, GTS.Clock.Model"
+         table="TA_CustomValidation" lazy="true">
+    <id name="ID" access="property" column="CustomValidation_ID">
+      <generator class="native" />
+    </id>
+    <property name="AssemblyName" access="property" column="CustomValidation_AssemblyName" />
+    <property name="ClassName" access="property" column="CustomValidation_ClassName" />
+    <property name="FieldName" access="property" column="CustomValidation_FieldName" />
+    <property name="DataType" access="property" column="CustomValidation_DataType" />
+    <property name="AllowNull" access="property" column="CustomValidation_AllowNull" />
+    <property name="AllowDuplicate" access="property" column="CustomValidation_AllowDuplicate" />
+    <property name="Length" access="property" column="CustomValidation_Length" />
+    <property name="Expression" access="property" column="CustomValidation_Expression" />
+    <property name="Format" access="property" column="CustomValidation_Format" />
+    <property name="SubSystem" access="property" column="CustomValidation_SubSystem" />
+    <property name="Description" access="property" column="CustomValidation_Description" />
+  </class>
+</hibernate-mapping>
+

@@ -1,0 +1,10 @@
+﻿<p>
+    Hello world ...
+</p>
+<button data-bind="click: notify">Notify message</button>
+<button data-bind="click: showLoading">Show Loading</button>
+<button data-bind="click: loadData">Load Data</button>
+<ul data-bind="foreach: items">
+    <li data-bind="text: $data"></li>
+</ul>
+<spa-widget-loader params="loading: $component.loading"></spa-widget-loader>

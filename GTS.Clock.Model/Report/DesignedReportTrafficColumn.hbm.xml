@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Report.DesignedReportTrafficColumn, GTS.Clock.Model"
+         table ="TA_DesignedReportTrafficColumn" lazy="true">
+    <id name="ID" access="property"  column="DesignedReportTrafficColumn_ID" >
+      <generator class="native" />
+    </id>
+    <property name="FnName"     access="property" column="DesignedReportTrafficColumn_FnName" />
+    <property name="EnName"     access="property" column="DesignedReportTrafficColumn_EnName" />
+    <property name="Key"     access="property" column="DesignedReportTrafficColumn_Key" />
+
+
+
+  </class>
+</hibernate-mapping>

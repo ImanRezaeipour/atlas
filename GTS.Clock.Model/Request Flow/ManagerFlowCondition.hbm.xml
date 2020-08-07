@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.RequestFlow.ManagerFlowCondition, GTS.Clock.Model"
+         table ="TA_ManagerFlowCondition" lazy="true">
+    <id name="ID" access="property"  column="mngrFlowCondition_ID" >
+      <generator class="native" />
+    </id>
+    <property name="Access" access="property" column="mngrFlowCondition_Access" />
+    <property name="EndFlow" access="property" column="mngrFlowCondition_EndFlow" />
+    <property name="Value" access="property" column="mngrFlowCondition_Value" />
+    <property name="Operator" access="property" column="mngrFlowCondition_Operator" />
+    <property name="Description" access="property" column="mngrFlowCondition_Description" />    
+
+    <many-to-one name="ManagerFlow" column="mngrFlowCondition_ManagerFlowID" class="GTS.Clock.Model.RequestFlow.ManagerFlow, GTS.Clock.Model" not-null="true" fetch="join" lazy="proxy"/>
+    <many-to-one name="PrecardAccessGroupDetail" column="mngrFlowCondition_PrecardAccessGroupDetailID" class="GTS.Clock.Model.Concepts.PrecardAccessGroupDetail, GTS.Clock.Model" not-null="true" fetch="join" lazy="proxy"/>
+  </class>
+</hibernate-mapping>

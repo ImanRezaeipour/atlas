@@ -1,0 +1,23 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ 
+/*Overwite jqx.bootstrap.css line70*/
+.jqx-widget-bootstrap, .jqx-widget-header-bootstrap, .jqx-fill-state-normal-bootstrap,
+.jqx-widget-content-bootstrap, .jqx-fill-state-hover-bootstrap, .jqx-fill-state-pressed-bootstrap {
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    font-size:12px;
+    -webkit-transition: box-shadow linear 0.2s;
+    -moz-transition: box-shadow linear 0.1s;
+    -o-transition: box-shadow linear 0.1s;
+    transition: box-shadow linear 0.1s;
+}

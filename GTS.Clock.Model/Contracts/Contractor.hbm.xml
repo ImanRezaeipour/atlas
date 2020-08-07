@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Contracts.Contractor, GTS.Clock.Model"
+         table ="TA_Contractor" lazy="true">
+    <id name="ID" access="property"  column="contractor_ID" >
+      <generator class="native" />
+    </id>
+    <property name="Name" access="property" column="contractor_Name" />
+    <property name="Organization" access="property" column="contractor_Organization" />
+    <property name="Code" access="property" column="contractor_Code" />    
+    <property name="EconomicCode" access="property" column="contractor_EconomicCode" />
+    <property name="Tel" access="property" column="contractor_Tel" />
+    <property name="Fax" access="property" column="contractor_Fax" />
+    <property name="Email" access="property" column="contractor_Email" />
+    <property name="Address" access="property" column="contractor_Address" />
+    <property name="Description" access="property" column="contractor_Description" />
+    <property name="IsDefault" access="property" column="contractor_IsDefault" />
+    <bag name="ContractsList" table="TA_Contract" lazy="true" inverse="true">
+      <key column="contract_ContractorID"></key>
+      <one-to-many class="GTS.Clock.Model.Contracts.Contract, GTS.Clock.Model"/>
+    </bag>
+  </class>
+</hibernate-mapping>

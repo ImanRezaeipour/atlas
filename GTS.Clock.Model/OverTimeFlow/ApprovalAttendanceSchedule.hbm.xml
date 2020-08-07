@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+
+  <class name="GTS.Clock.Model.OverTimeFlow.ApprovalAttendanceSchedule, GTS.Clock.Model" table ="TA_ApprovalAttendanceSchedule" lazy="true">
+
+    <id name="ID" access="property"  column="ApprovalSch_ID" >
+      <generator class="native" />
+    </id>
+
+    <property name="DateFrom"     access="property" column="ApprovalSch_DateFrom" />
+    <property name="DateTo"     access="property" column="ApprovalSch_DateTo" />
+    <property name="ApprovalType" access="property" column="ApprovalSch_ApprovalType" />
+    <property name="DateRangeOrder" access="property" column="ApprovalSch_DateRangeOrder" />
+
+    <many-to-one name="CostCenter" column="ApprovalSch_CostCenterID" class="GTS.Clock.Model.BaseInformation.CostCenter, GTS.Clock.Model" not-null="true"/>
+
+  </class>
+</hibernate-mapping>

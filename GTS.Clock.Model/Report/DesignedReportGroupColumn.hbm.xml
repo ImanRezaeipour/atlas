@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Report.DesignedReportGroupColumn, GTS.Clock.Model"
+         table ="TA_DesignedReportGroupColumn" lazy="true">
+    <id name="ID" access="property"  column="DesignedReportGroupColumn_ID" >
+      <generator class="native" />
+    </id>
+    <many-to-one name="Column" column="DesignedReportGroupColumn_ColumnID" class="GTS.Clock.Model.Report.DesignedReportColumn, GTS.Clock.Model" />
+    <property name="Order"     access="property" column="DesignedReportGroupColumn_Order" />
+    <property name="IsGroupingNewPage"     access="property" column="DesignedReportGroupColumn_IsGroupingNewPage" />
+    <many-to-one name="Report" column="DesignedReportGroupColumn_ReportID" class="GTS.Clock.Model.Report.Report, GTS.Clock.Model" />
+    <many-to-one name="Person" column="DesignedReportGroupColumn_PersonID" class="GTS.Clock.Model.Person, GTS.Clock.Model" />
+
+
+  </class>
+</hibernate-mapping>

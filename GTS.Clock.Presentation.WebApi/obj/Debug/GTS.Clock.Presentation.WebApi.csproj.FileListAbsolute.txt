@@ -1,0 +1,1 @@
+D:\TMI\Atlas\GTS.Clock.Presentation.WebApi\obj\Debug\GTS.Clock.Presentation.WebApi.csprojResolveAssemblyReference.cache

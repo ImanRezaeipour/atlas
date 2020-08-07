@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.Temp.Temp, GTS.Clock.Model"
+         table ="TA_Temp" lazy="true">
+    <!--<id name="ID" access="property"  column="temp_ID" >
+      <generator class="native" />
+    </id>-->
+    <composite-id>
+      <key-property name="ObjectID" column="temp_ObjectID"/>
+      <key-property name="OperationGUID" column="temp_OperationGUID" />      
+    </composite-id>
+    <property name="ObjectID" access="property" column="temp_ObjectID" />
+    <property name="OperationGUID" access="property" column="temp_OperationGUID" />
+    <property name="CreationDate" access="property" column="temp_CreationDate" />
+  </class>
+</hibernate-mapping>

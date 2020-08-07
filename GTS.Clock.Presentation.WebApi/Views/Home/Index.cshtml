@@ -1,0 +1,26 @@
+﻿@{Layout = null;}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 minimum-scale=1" />
+    <title></title>
+    <script data-main="/app/main" src="~/app/engine/lib/require.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <spa-app-menu params="items: [
+                      {title:'خانه', href:'#/home'},
+                      {title:'HRMS', href:'#/hrms'},
+                      {title:'کارتابل', href:'#/kartable'},
+                      {title:'بودجه بندی اضافه کاری تشویقی', href:'#/overtime'},
+                      {title:'زمان بندی تایید کارتابل', href:'#/approvalSchedulelist'},
+                      {title:'تایید اضافه کار تشویقی-مدیران و معاونین', href:'#/overtimePersonlist'},
+                      {title:'تایید اضافه کار تشویقی-اداری', href:'#/overtimeEdarilist'}]">
+        </spa-app-menu>
+
+        <spa-widget-manager></spa-widget-manager>
+    </div>
+</body>
+</html>
+

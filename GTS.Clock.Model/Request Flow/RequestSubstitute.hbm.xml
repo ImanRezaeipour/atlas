@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true">
+  <class name="GTS.Clock.Model.RequestFlow.RequestSubstitute, GTS.Clock.Model"
+         table ="TA_RequestSubstitute" lazy="true">
+    <id name="ID" access="property"  column="requestSubstitute_ID" >
+      <generator class="native" />
+    </id>
+    <property name="Confirmed" access="property" column="requestSubstitute_Confirmed" />
+    <property name="OperationDate" access="property" column="requestSubstitute_OperationDate" />
+    <property name="Description" access="property" column="requestSubstitute_Description" />
+
+    <many-to-one name="Request" column="requestSubstitute_RequestID" class="GTS.Clock.Model.RequestFlow.Request, GTS.Clock.Model"/>
+    <many-to-one name="SubstitutePerson" column="requestSubstitute_SubstituteID" class="GTS.Clock.Model.Person, GTS.Clock.Model" />
+    
+  </class>
+</hibernate-mapping>

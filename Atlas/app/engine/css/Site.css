@@ -1,0 +1,61 @@
+﻿@font-face {
+    font-family: 'BYekan'; /*تعریف یک نام برای فونت*/
+    src: url('../fonts/BYekan.eot'); /*اکسپلورر 9 به بعد*/
+    src: local('bYekan'), /*بررسی نصب بودن فونت در سیستم کاربر*/
+    local('b Yekan'), /*برای برخی از مرورگرها مانند سافاری*/
+    url('../fonts/WebYekan.eot?#iefix') format('embedded-opentype'), /*هک برای اکسپلورر 8 و ماقبل*/
+    url('../fonts/WebYekan.woff') format('woff'), /*مرورگر های جدید*/
+    url('../fonts/WebYekan.ttf') format('truetype'), /*تمام مرورگرها به جزء اکسپلورر*/
+    url('../fonts/WebYekan.svg#BYekan') format('svg'); /*نسخه های قدیمی سیستم عامل iOS*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'BYekan';
+    font-size: 12px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Overwite jqx.bootstrap.css line70*/
+.jqx-widget-bootstrap, .jqx-widget-header-bootstrap, .jqx-fill-state-normal-bootstrap,
+.jqx-widget-content-bootstrap, .jqx-fill-state-hover-bootstrap, .jqx-fill-state-pressed-bootstrap {
+    font-family: 'BYekan', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    -webkit-transition: box-shadow linear 0.2s;
+    -moz-transition: box-shadow linear 0.1s;
+    -o-transition: box-shadow linear 0.1s;
+    transition: box-shadow linear 0.1s;
+}
+
+.select2-container .select2-selection__rendered {
+    font-family: 'BYekan';
+}
+
+.form-control {
+    font-family: 'BYekan';
+    font-size: 12px;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: 'BYekan';
+}
+
+.btn {
+    font-family: 'BYekan';
+    font-size: 13px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'BYekan';
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}

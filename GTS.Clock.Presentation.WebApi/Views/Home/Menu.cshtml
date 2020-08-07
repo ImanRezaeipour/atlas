@@ -1,0 +1,12 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="btn-toolbar">
+            <ul data-bind="foreach: items, menu: ''" class="nav nav-pills">
+                <li>
+                    <a data-bind="text: $data.title, attr:{href:$data.href}"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
